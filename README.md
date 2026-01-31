@@ -1,6 +1,6 @@
 # HelloWP Hub
 
-A [HelloWP.io](https://hellowp.io) hivatalos dokumentációs portálja és tudásbázisa.
+A [FusionCRM](https://fusioncrm.hu/) hivatalos dokumentációs portálja és tudásbázisa.
 
 ## Tartalom
 
@@ -8,17 +8,6 @@ A [HelloWP.io](https://hellowp.io) hivatalos dokumentációs portálja és tudá
 - **HelloTools** - Átfogó eszközkészlet WordPress fejlesztőknek
 - **HelloIMG** - Képoptimalizáló API WebP és AVIF támogatással
 - **Üzemeltetés** - WordPress karbantartás és üzemeltetés
-
-### Tudásbázis
-- **Fejlesztői eszközök** - Roots Stack, CI/CD, tesztelés, IDE-k
-- **Hasznos eszközök** - Design, adatbázis, API tesztelés, biztonság
-- **Oktatóanyagok** - Lépésről lépésre útmutatók
-- **Hibaelhárítás** - Gyakori WordPress hibák megoldása
-
-### Súgó
-- Számlázás és előfizetések
-- Partnerprogram
-- Gyakori kérdések
 
 ## Technológia
 
@@ -60,13 +49,13 @@ A statikus fájlok a `build` mappába kerülnek.
 ### Build
 
 ```bash
-docker build -t hub-hellowp .
+docker build -t fusioncrmdocs .
 ```
 
 ### Futtatás
 
 ```bash
-docker run -d -p 8080:80 hub-hellowp
+docker run -d -p 8080:80 fusioncrmdocs
 ```
 
 A site elérhető lesz: `http://localhost:8080`
@@ -84,4 +73,4 @@ A site elérhető lesz: `http://localhost:8080`
 A forráskód [MIT](https://opensource.org/licenses/MIT) licensz alatt áll.
 A weboldal tartalma [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) licensz alatt áll.
 
-Copyright © [HelloWP.io](https://hellowp.io)
+Copyright © [FusionCRM](https://fusioncrm.hu)

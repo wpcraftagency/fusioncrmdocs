@@ -71,14 +71,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: "ujdonsag",
-        content:
-          '<strong>Újdonság:</strong> Elindult a HelloWP Hub oldal! <a href="/hogyan-hasznald-a-hub-oldalt">Hogyan használd a HUB oldalt?</a> 🔥',
-        backgroundColor: "#5991c7",
-        textColor: "#ffffff",
-        isCloseable: true,
-      },
 
       algolia: {
         // The application ID provided by Algolia
@@ -105,21 +97,6 @@ const config = {
             activeBaseRegex: "docs/(next|v8)",
           },
           {
-            to: "docs/knowledgebase/",
-            label: "Knowledge base",
-            position: "left",
-          },
-          {
-            to: "docs/sugo/",
-            label: "Súgó",
-            position: "left",
-          },
-          {
-            to: "docs/kozosseg/discord",
-            label: "Közösség",
-            position: "left",
-          },
-          {
             href: "https://github.com/wpcraftagency/hub.nestlywp",
             label: "GitHub",
             position: "right",
@@ -143,61 +120,6 @@ const config = {
               {
                 label: "Üzemeltetés és karbantartás",
                 to: "/docs/dokumentacio/uzemeltetes-karbantartas",
-              },
-            ],
-          },
-          {
-            title: "Súgó",
-            items: [
-              {
-                label: "Partnerprogram",
-                to: "/docs/sugo/partnerprogram",
-              },
-              {
-                label: "Számlázás és előfizetés",
-                to: "/docs/sugo/szamlazas-es-elofizetesek",
-              },
-              {
-                label: "Egyéb",
-                to: "/docs/sugo/egyeb",
-              },
-            ],
-          },
-          {
-            title: "Knowledge base",
-            items: [
-              {
-                label: "Hasznos eszközök",
-                to: "docs/knowledgebase/hasznos-eszkozok",
-              },
-              {
-                label: "Oktatóanyagok",
-                to: "/docs/knowledgebase/oktatoanyagok",
-              },
-              {
-                label: "Hibaelhárítás",
-                to: "/docs/knowledgebase/hibaelharitas",
-              },
-            ],
-          },
-          {
-            title: "Közösség",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "Discord",
-                to: "/docs/kozosseg/discord",
-              },
-              {
-                label: "Facebook",
-                to: "/docs/kozosseg/facebook",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/wpcraftagency/hub.nestlywp",
               },
             ],
           },

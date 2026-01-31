@@ -44,20 +44,6 @@ const sidebars = {
                 "dokumentacio/intro",
             ],
         },
-        {
-            label: "Súgó",
-            type: "category",
-            items: [
-                "sugo/intro",
-            ],
-        },
-        {
-            label: "Knowledge base",
-            type: "category",
-            items: [
-                "knowledgebase/intro",
-            ],
-        }
     ]  */
 
 };
