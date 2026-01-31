@@ -122,22 +122,7 @@ const config = {
                 to: "/docs/dokumentacio/uzemeltetes-karbantartas",
               },
             ],
-                      {
-            title: "Dokumentáció",
-            items: [
-              {
-                label: "HelloPack",
-                to: "/docs/dokumentacio/hellopack",
-              },
-              {
-                label: "Komplett weboldalak",
-                to: "/docs/dokumentacio/komplett-weboldalak",
-              },
-              {
-                label: "Üzemeltetés és karbantartás",
-                to: "/docs/dokumentacio/uzemeltetes-karbantartas",
-              },
-            ],
+            
           },
         ],
         logo: {
