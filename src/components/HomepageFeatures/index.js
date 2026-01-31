@@ -10,7 +10,7 @@ const FeatureList = [
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        Itt találod a NestlyWP-s termékek és szolgáltatások leírásait. {" "}
+        Itt találod a FusionCRM tudásbázisát. {" "}
       </>
     ),
   },
