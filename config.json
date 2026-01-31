@@ -1,6 +1,6 @@
 {
-  "index_name": "nestlywp",
-  "start_urls": ["https://kb.nestlywp.com/"],
+  "index_name": "fusioncrm",
+  "start_urls": ["https://fusioncrm.hu/"],
   "sitemap_urls": ["https://kb.nestlywp.com/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": ["/tests"],
