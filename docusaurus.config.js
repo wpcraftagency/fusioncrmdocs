@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "NestlyWP KB",
+  title: "FusionCRM",
   tagline: "Dokumentáció és Tudásbázis",
   favicon: "img/favicon.ico",
 
@@ -15,8 +15,8 @@ const config = {
   url: "https://kb.nestlywp.com/",
   baseUrl: "/",
 
-  organizationName: "nestlywp", // Usually your GitHub org/user name.
-  projectName: "hub.nestlywp", // Usually your repo name.
+  organizationName: "fusioncrm", // Usually your GitHub org/user name.
+  projectName: "fusioncrmdocs", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -92,9 +92,9 @@ const config = {
 
       image: "img/hellowp-hub.png",
       navbar: {
-        title: "NestlyWP KB",
+        title: "FusionCRM",
         logo: {
-          alt: "NestlyWP KB",
+          alt: "FusionCRM",
           src: "img/logo.svg",
         },
         items: [
