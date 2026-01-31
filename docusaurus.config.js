@@ -12,7 +12,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://kb.nestlywp.com/",
+  url: "https://fusioncrm.hu/",
   baseUrl: "/",
 
   organizationName: "fusioncrm", // Usually your GitHub org/user name.
@@ -107,6 +107,22 @@ const config = {
       footer: {
         links: [
           {
+            title: "Dokumentáció",
+            items: [
+              {
+                label: "HelloPack",
+                to: "/docs/dokumentacio/hellopack",
+              },
+              {
+                label: "Komplett weboldalak",
+                to: "/docs/dokumentacio/komplett-weboldalak",
+              },
+              {
+                label: "Üzemeltetés és karbantartás",
+                to: "/docs/dokumentacio/uzemeltetes-karbantartas",
+              },
+            ],
+                      {
             title: "Dokumentáció",
             items: [
               {
