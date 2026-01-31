@@ -134,8 +134,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="NestlyWP KB"
-      description=" NestlyWP Document and Knowledge base "
+      title="FusionCRM"
+      description=" FusionCRM Document and Knowledge base "
     >
       <HomepageHeader />
       <main>
