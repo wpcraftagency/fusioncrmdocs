@@ -208,7 +208,7 @@ const config = {
           srcDark: "img/logo-260-60-wihte-green.svg",
           href: "https://nestlywp.com",
         },
-        copyright: `© ${new Date().getFullYear()} WpCraft Digital Agency, LLC <br> A forráskód <a href="/mit-licensz">MIT</a>, a weboldal tartalma <a href="/cc-by-nc-sa-4.0">CC BY NC SA 4.0 license</a> alatt áll.`,
+        copyright: `© ${new Date().getFullYear()} FusionCRM <br> A forráskód <a href="/mit-licensz">MIT</a>, a weboldal tartalma <a href="/cc-by-nc-sa-4.0">CC BY NC SA 4.0 license</a> alatt áll.`,
       },
       prism: {
         theme: lightCodeTheme,
