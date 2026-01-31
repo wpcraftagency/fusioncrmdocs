@@ -106,30 +106,13 @@ const config = {
       },
       footer: {
         links: [
-          {
-            title: "Dokumentáció",
-            items: [
-              {
-                label: "HelloPack",
-                to: "/docs/dokumentacio/hellopack",
-              },
-              {
-                label: "Komplett weboldalak",
-                to: "/docs/dokumentacio/komplett-weboldalak",
-              },
-              {
-                label: "Üzemeltetés és karbantartás",
-                to: "/docs/dokumentacio/uzemeltetes-karbantartas",
-              },
-            ],
-            
-          },
+
         ],
         logo: {
           alt: "NestlyWP!",
           src: "img/logo-260-60-color.svg",
           srcDark: "img/logo-260-60-wihte-green.svg",
-          href: "https://nestlywp.com",
+          href: "https://fusioncrm.hu",
         },
         copyright: `© ${new Date().getFullYear()} FusionCRM <br> A forráskód <a href="/mit-licensz">MIT</a>, a weboldal tartalma <a href="/cc-by-nc-sa-4.0">CC BY NC SA 4.0 license</a> alatt áll.`,
       },

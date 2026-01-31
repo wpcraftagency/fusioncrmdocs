@@ -1,0 +1,150 @@
+---
+title: Alkamazás Beállítások
+description: Alkamazás Beállítások
+keywords:
+  - hellopack
+sidebar_label: Alkamazás Beállítások
+sidebar_position: 4
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-sliders text-primary" /> Alkalmazás beállítások
+
+Az Alkalmazás beállítások menü pontban a FusionCRM rendszer globális működését meghatározó alapértelmezett beállítások adhatók meg. Ezek a konfigurációk hatással vannak a megjelenítésre, lokalizációra, adatkezelésre és az ügyfél-regisztráció működésére.
+
+---
+
+## Elérési út
+
+**Beállítások → Alkalmazás beállítások**
+
+---
+
+## Alkalmazás beállítások fül
+
+Ez a fül a rendszer általános, minden felhasználóra és modulra érvényes alapbeállításokat tartalmazza.
+
+---
+
+### Dátumformátum
+
+Meghatározza, hogyan jelenjenek meg a dátumok a rendszerben.  
+Példa: d-m-Y (15-01-2026)  
+A beállítás minden listában, űrlapon és riportban érvényes.
+
+---
+
+### Időformátum
+
+A megjelenített idő formátuma.  
+Választható 12 vagy 24 órás formátum.  
+Példa: 12 óra (11:24 du)
+
+---
+
+### Alapértelmezett időzóna
+
+A rendszer által használt időzóna.  
+Ajánlott a cég tényleges földrajzi elhelyezkedésének megfelelő értéket választani.  
+Példa: Europe/Budapest
+
+---
+
+### Alapértelmezett pénznem
+
+A FusionCRM-ben használt alapértelmezett pénznem.  
+Ez az érték jelenik meg automatikusan pénzügyi modulokban és űrlapokon.  
+Példa: Ft (HUF)
+
+---
+
+### Nyelv
+
+Az alkalmazás alapértelmezett nyelve.  
+Új felhasználók számára ez a nyelv kerül beállításra.  
+Példa: Magyar
+
+---
+
+### Adattábla sorlimit
+
+Meghatározza, hogy egy listanézetben alapértelmezetten hány sor jelenjen meg.  
+Példa: 10  
+A teljesítmény és áttekinthetőség optimalizálására szolgál.
+
+---
+
+### Az alkalmazottak exportálhatják az adatokat
+
+Be- vagy kikapcsolható jogosultság.  
+Ha engedélyezett, a felhasználók adatokat exportálhatnak (pl. CSV, Excel).  
+Adatvédelmi szempontból érzékeny beállítás, adminisztrátori döntést igényel.
+
+---
+
+## Ügyfél regisztráció beállítások fül
+
+Ez a szekció az ügyfelek önálló regisztrációját szabályozza a FusionCRM rendszerben.
+
+---
+
+### Ügyfél regisztráció engedélyezése
+
+Bekapcsolása esetén az ügyfelek saját maguk hozhatnak létre fiókot.  
+Kikapcsolt állapotban az ügyfeleket csak adminisztrátor vagy munkatárs rögzítheti.
+
+---
+
+### Adminisztrátori jóváhagyás szükséges
+
+Ha engedélyezett, az ügyfél regisztráció után nem kap automatikusan hozzáférést.  
+A fiók csak adminisztrátori jóváhagyást követően aktiválódik.  
+Ajánlott üzleti vagy B2B környezetben.
+
+---
+
+### Ügyfél regisztrációs URL
+
+A rendszer által generált egyedi regisztrációs link.  
+Ezt az URL-t kell megosztani a weboldalon vagy e-mailben az ügyfelekkel.  
+A Másolás gombbal az URL gyorsan vágólapra helyezhető.
+
+:::note
+ℹ️ Ez az URL szolgál az ügyfelek weboldalon keresztül történő regisztrációjához.
+:::
+
+---
+
+## Ügyfél regisztrációs felület
+
+A regisztrációs oldalon az ügyfél az alábbi adatokat adja meg:
+
+- Név  
+- E-mail cím  
+- Jelszó (minimum 8 karakter)  
+- Cég neve  
+
+A regisztráció után a rendszer a beállításoknak megfelelően automatikusan aktiválja a fiókot, vagy adminisztrátori jóváhagyásra vár.
+
+---
+
+## Mentés
+
+A beállítások módosítása után kattints a **Mentés** gombra.
+
+:::tip
+✔️ A változások azonnal érvénybe lépnek a rendszerben.
+:::
+
+---
+
+:::warning ## Fontos megjegyzések
+
+- Az alkalmazás beállítások módosítása globálisan hat a rendszer működésére.  
+- Egyes változtatások (pl. időzóna, pénznem) hatással lehetnek meglévő adatok értelmezésére.  
+- Ügyfél regisztráció engedélyezése előtt javasolt adatvédelmi és üzleti folyamatokat átgondolni.
+:::

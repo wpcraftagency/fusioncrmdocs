@@ -1,0 +1,112 @@
+---
+title: Üzleti címek
+description: Üzleti címek
+keywords:
+  - hellopack
+sidebar_label: Üzleti címek
+sidebar_position: 3
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-location-dot text-primary" /> Üzleti címek
+
+Az Üzleti címek menü pontban kezelhetők a vállalathoz tartozó fizikai és adminisztratív címek. Ezeket a címeket a FusionCRM több modulja is felhasználja (pl. jelenlét, projektek, pénzügyi és nyilvántartási funkciók).
+
+---
+
+## Elérési út
+
+**Beállítások → Üzleti címek**
+
+---
+
+## Áttekintés
+
+A képernyőn egy lista jelenik meg a rögzített üzleti címekről az alábbi adatokkal:
+
+- Helyszín megnevezése  
+- Cím  
+- Ország  
+- Adó neve  
+- Alapértelmezett státusz  
+
+Egy vállalathoz több üzleti cím is tartozhat, azonban csak egy cím lehet alapértelmezett.
+
+:::note
+ℹ️ Az alapértelmezett üzleti címet a rendszer automatikusan használja több modulban, de egyes nyilvántartások létrehozásakor ettől eltérő cím is kiválasztható.
+:::
+
+---
+
+## Új üzleti cím hozzáadása
+
+Új cím rögzítéséhez kattints az **Új cím hozzáadása** gombra.
+
+Ez megnyitja a **Cím szerkesztése** ablakot, ahol az alábbi mezők tölthetők ki:
+
+---
+
+### Ország
+
+Az üzleti címhez tartozó ország kiválasztása.  
+Legördülő listából választható.
+
+---
+
+### Helyszín
+
+A cím belső megnevezése (pl. Székhely, Iroda, Raktár).  
+Kötelező mező.
+
+---
+
+### Adó neve
+
+Az adott címhez kapcsolódó adózási megnevezés.  
+Opcionális mező, jellemzően pénzügyi / számlázási célokra használatos.
+
+---
+
+### Adó
+
+Az adott telephelyhez tartozó adószám.  
+Nem kötelező, de pénzügyi modulok esetén ajánlott kitölteni.
+
+---
+
+### Cím
+
+A teljes postai cím szöveges formában.  
+Kötelező mező.
+
+---
+
+### Szélesség / Hosszúság
+
+A cím földrajzi koordinátái.  
+Opcionális mezők.  
+Jelenléti, térképes vagy helyalapú funkciók esetén hasznosak.
+
+---
+
+## Szerkesztés és mentés
+
+Meglévő cím módosításához kattints a **Szerkesztés** gombra a lista jobb oldalán.  
+A módosítások véglegesítéséhez kattints a **Mentés** gombra.  
+A **Mégsem** gombbal a változtatások elvethetők.
+
+:::tip
+✔️ Mentés után az adatok azonnal frissülnek a rendszerben.
+:::
+
+---
+
+## Fontos tudnivalók
+
+- Legalább egy üzleti cím megléte javasolt a rendszer megfelelő működéséhez.  
+- Az alapértelmezett cím több modulban automatikusan felhasználásra kerül.  
+- Hibás vagy hiányos címadatok problémát okozhatnak pénzügyi, jelenléti vagy riport funkciókban.

@@ -1,0 +1,110 @@
+---
+title: Projekt beállítások
+description: Projekt beállítások
+keywords:
+  - hellopack
+sidebar_label: Projekt beállítások
+sidebar_position: 12
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-diagram-project text-primary" /> Projekt beállítások
+
+A Projekt beállítások menüpontban a projektkezelés működését lehet testre szabni: **státuszok**, **kategóriák** és **automatikus értesítések** definiálásával.  
+Ezek a beállítások határozzák meg, hogyan követhető egy projekt életciklusa a rendszerben.
+
+---
+
+## 1. Projekt állapot beállításai
+
+Ez a fül a projektek státuszkezelését szabályozza.
+
+### Elérhető funkciók
+
+- Új projektállapot hozzáadása  
+- Meglévő állapotok szerkesztése vagy törlése  
+- Alapértelmezett projektállapot kijelölése  
+
+---
+
+### Projektállapot létrehozása
+
+Egy új állapot hozzáadásakor az alábbi mezők érhetők el:
+
+- **Név** – az állapot megnevezése (pl. in progress, on hold)  
+- **Címke színe** – az állapot vizuális azonosításához  
+- **Állapot** – aktív vagy inaktív  
+
+Az aktív állapotok jelennek meg választhatóként projektek létrehozásakor.
+
+---
+
+### Alapértelmezett állapot
+
+- Egyetlen állapot jelölhető alapértelmezettként  
+- Új projekt létrehozásakor automatikusan ez lesz kiválasztva  
+
+---
+
+## 2. Projekt kategória
+
+A projektkategóriák a projektek típus szerinti csoportosítására szolgálnak.
+
+### Projektkategória hozzáadása
+
+- **Kategória neve** – szabadon megadható  
+  (pl. Webfejlesztés, Marketing kampány, Karbantartás)
+
+A kategóriák:
+
+- riportokban,  
+- szűréseknél,  
+- projektlistákban  
+
+használhatók a jobb átláthatóság érdekében.
+
+---
+
+## 3. Projekt beállítások (értesítések)
+
+Ez a szekció a projekt határidőkhöz kapcsolódó emlékeztetőket kezeli.
+
+### Emlékeztetők engedélyezése
+
+- **Emlékeztető küldése** – be- vagy kikapcsolható  
+
+---
+
+### Értesítések címzettje
+
+Választható, hogy kik kapják meg az értesítéseket:
+
+- Adminisztrátorok  
+- Projekt tagjai  
+- Összes érintett  
+
+---
+
+### Emlékeztetés időzítése
+
+- **Emlékeztetés előtte** – hány nappal a határidő előtt történjen az értesítés  
+  (pl. 5 nap)
+
+Ez segít:
+
+- határidők betartásában,  
+- csúszások megelőzésében,  
+- projektmenedzsment automatizálásában.
+
+---
+
+## Jó gyakorlatok
+
+- Használj kevés, de egyértelmű projektállapotot  
+- Színekkel különítsd el az aktív, várakozó és lezárt fázisokat  
+- Állíts be emlékeztetőt minden határidős projekthez  
+- Kategóriákat üzleti logika szerint nevezd el (nem technikai szinten)

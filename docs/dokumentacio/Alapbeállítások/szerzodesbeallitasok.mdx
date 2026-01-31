@@ -1,0 +1,78 @@
+---
+title: Szerződés beállítások
+description: Szerződés beállítások
+keywords:
+  - hellopack
+sidebar_label: Szerződés beállítások
+sidebar_position: 10
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-file-signature text-primary" /> Szerződés beállítások
+
+A Szerződés beállítások menü pontban a FusionCRM-ben létrehozott szerződések automatikus sorszámozása konfigurálható.  
+Ez biztosítja az egységes, átlátható és visszakövethető szerződéskezelést.
+
+---
+
+## Elérhető beállítások
+
+### Szerződés előtag
+
+Az a rövid azonosító, amely minden szerződés sorszámának elején megjelenik.
+
+Példa:
+
+CONT
+
+Ez jellemzően a Contract rövidítése, de szabadon módosítható (pl. SZERZ, AGREEMENT).
+
+---
+
+### Szerződésszám elválasztó
+
+Az előtag és a sorszám közötti elválasztó karakter.
+
+Példa:
+
+#
+
+---
+
+### Szerződésszám számjegyei
+
+Meghatározza, hogy a sorszám hány számjegyből álljon.
+
+Példa:
+
+3 → 001, 002, 003
+
+---
+
+### Szerződésszám példája
+
+Ez a mező automatikusan mutatja, hogyan fog kinézni a generált szerződésszám a fenti beállítások alapján.
+
+Példa:
+
+CONT#001
+
+---
+
+:::warning Fontos tudnivalók
+A beállítások csak az újonnan létrehozott szerződésekre vonatkoznak.  
+A korábban létrehozott szerződések sorszáma nem módosul visszamenőleg.  
+A sorszámozás automatikusan, növekvő sorrendben történik.  
+Ajánlott a szerződés előtagot a cég belső adminisztrációs logikájához igazítani.
+:::
+
+---
+
+## Mentés
+
+A beállítások véglegesítéséhez kattintson a Mentés gombra.  
+A módosítások azonnal érvénybe lépnek.

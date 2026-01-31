@@ -1,0 +1,193 @@
+---
+title: Céges ügyfelek
+description: Céges ügyfelek
+keywords:
+  - hellopack
+sidebar_label: Céges ügyfelek
+sidebar_position: 4
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-building text-primary" /> Céges ügyfelek (Clients)
+
+## Modul célja és üzleti szerepe
+
+Az **Ügyfelek modul** a FusionCRM-ben a már konvertált, **aktív ügyfelek kezelésére** szolgál.  
+Ide kerülnek azok a leadek, amelyek:
+
+- sikeres ügylet (**„Win”**) státuszba kerültek, vagy  
+- manuálisan ügyfélként lettek rögzítve.  
+
+Ez a modul képezi az **account management**, **utógondozás**, **upsell / cross-sell** és a **hosszú távú ügyfélkapcsolat** alapját.
+
+---
+
+## Ügyfelek lista nézet
+
+### Elérés
+
+**Bal oldali menü:**  
+**Ügyfelek**
+
+---
+
+### Lista nézet tartalma
+
+A lista táblázatos formában jeleníti meg az ügyfeleket az alábbi fő oszlopokkal:
+
+- Név  
+- E-mail  
+- Mobil  
+- Kategória  
+- Állapot  
+- Létrehozva  
+- Művelet  
+
+Amennyiben még nincs rögzített ügyfél, a rendszer  
+**„Nincs rendelkezésre álló adat”** üzenetet jelenít meg.
+
+---
+
+## Szűrés és keresés az Ügyfelek között
+
+A lista felett elérhető szűrők:
+
+- Hozzáadva  
+- Kezdő dátum – Záró dátum  
+- Ügyfél  
+- Kategória  
+- Alkategória  
+- Szöveges keresés  
+
+Ez lehetővé teszi:
+
+- ügyfélportfólió gyors áttekintését,  
+- szegmentálást (pl. szolgáltatás típus, méret),  
+- riportálás előkészítését.
+
+---
+
+## Új ügyfél hozzáadása
+
+### Manuális ügyfél rögzítés
+
+Kattints az **„Ügyfél hozzáadása”** gombra.
+
+Megnyílik az **Ügyfél hozzáadása** adatlap.
+
+---
+
+## Fiók adatai szekció
+
+### Kötelező mezők
+
+- **Ügyfél neve**  
+- **E-mail**  
+  *(erősen ajánlott a későbbi kommunikációhoz)*  
+
+---
+
+### Alap ügyfél adatok
+
+- Megszólítás  
+- Ország  
+- Mobil (országkóddal)  
+- Nem  
+- **Nyelv módosítása**  
+  *(meghatározza az ügyfél kommunikációs nyelvét)*  
+- Profilkép  
+
+---
+
+## Ügyfél jogosultságok és kommunikáció
+
+### Bejelentkezés engedélyezése
+
+Beállítható, hogy:
+
+- az ügyfél beléphessen-e az **ügyfélportálra**,  
+- kapjon-e hozzáférést rendeléseihez, dokumentumaihoz.
+
+---
+
+### E-mail értesítések
+
+Meghatározható, hogy:
+
+- kapjon-e rendszer e-maileket,  
+- értesüljön ajánlatokról, státuszváltozásokról.
+
+:::warning Fontos megjegyzések
+Ez különösen fontos **GDPR és UK compliance** szempontból, ezért az értesítési beállításokat mindig körültekintően kezeld.
+:::
+
+---
+
+## Ügyfél kategorizálás
+
+### Kategória és alkategória
+
+- **Ügyfél kategória**  
+  *(pl. Retainer, One-off, Enterprise)*  
+- **Ügyfél alkategória**  
+  *(pl. Web, PPC, SEO)*  
+
+A kategóriák segítik:
+
+- a riportálást,  
+- az upsell lehetőségek azonosítását,  
+- az account management priorizálását.
+
+---
+
+## Cég adatai szekció (Céges ügyfelek)
+
+Ez a rész a **B2B ügyfelek kezelésének kulcsa**.
+
+### Rögzíthető adatok
+
+- Cég neve  
+- Hivatalos weboldal  
+- Adó neve (pl. VAT)  
+- Adószám  
+- Irodai telefonszám  
+- Város  
+- Állam / megye  
+- Irányítószám  
+- Cég címe  
+- Szállítási cím  
+- Cég logója  
+
+Ezek az adatok automatikusan felhasználhatók:
+
+- számlázáshoz,  
+- ajánlatokhoz,  
+- szerződésekhez.
+
+---
+
+## Jegyzetek és belső megjegyzések
+
+A **Jegyzet** mező:
+
+- belső használatra szolgál,  
+- nem látható az ügyfél számára,  
+- alkalmas account history és megállapodások rögzítésére.
+
+---
+
+## Mentési opciók
+
+Az oldal alján elérhető műveletek:
+
+- **Mentés** – ügyfél létrehozása  
+- **Mentés és hozzáadás** – mentés után új ügyfél rögzítése  
+- **Mégsem** – megszakítás  
+
+:::tip
+Minél részletesebben rögzíted az ügyféladatokat, annál **hatékonyabb lesz a későbbi számlázás, riportálás és ügyfélkezelés**.
+:::

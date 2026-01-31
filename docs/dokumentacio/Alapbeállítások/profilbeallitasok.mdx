@@ -1,0 +1,196 @@
+---
+title: Profil Beállítások
+description: Profil Beállítások
+keywords:
+  - hellopack
+sidebar_label: Profil Beállítások
+sidebar_position: 5
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-user text-primary" /> Profil Beállítások
+
+
+
+# Profil beállítások
+
+A Profil beállítások menü pontban a felhasználó saját személyes adatait, értesítési preferenciáit, sürgősségi kapcsolatait és a profiljához kapcsolódó dokumentumokat kezelheti. Ezek az adatok egyéni szinten kerülnek tárolásra, és nem befolyásolják más felhasználók beállításait.
+
+## Elérési út
+
+Beállítások → Profil beállítások
+
+---
+
+## Profil fül
+
+Ez a fül tartalmazza a felhasználó alapvető személyes és fiókadatait.
+
+### Profilkép
+
+Profilkép feltöltésére szolgál.  
+A feltöltött kép megjelenik a rendszer különböző részein (pl. feladatok, megjegyzések).
+
+:::tip
+Ajánlott négyzetes arányú, jó minőségű képet feltölteni a megfelelő megjelenés érdekében.
+:::
+
+---
+
+### Név
+
+A felhasználó teljes neve.  
+A rendszerben történő azonosításhoz használatos.
+
+---
+
+### E-mail cím
+
+A felhasználó elsődleges e-mail címe.  
+Kötelező mező.  
+Erre az e-mail címre érkeznek a rendszerértesítések.
+
+:::warning
+Az e-mail cím megváltoztatása hatással lehet a bejelentkezésre és az értesítések kézbesítésére.
+:::
+
+---
+
+### Jelszó
+
+Új jelszó megadása vagy meglévő módosítása.  
+Minimum 8 karakter hosszúság szükséges.  
+Ha üresen marad, a jelszó nem változik.
+
+:::tip
+Biztonsági okokból javasolt erős, egyedi jelszót használni.
+:::
+
+---
+
+### E-mail értesítések
+
+Beállítható, hogy a felhasználó kapjon-e e-mail értesítéseket a rendszerből.  
+Engedélyezés vagy letiltás választható.
+
+---
+
+### Google Naptár engedélyezése
+
+Engedélyezés esetén a FusionCRM integrálható a Google Naptárral.  
+Lehetővé teszi események és határidők szinkronizálását.
+
+:::tip
+Ez a beállítás különösen hasznos határidőkkel, meetingekkel dolgozó felhasználók számára.
+:::
+
+---
+
+### Ország
+
+A felhasználó országának kiválasztása.  
+Lokalizációs és formátum beállításoknál lehet jelentősége.
+
+---
+
+### Mobil telefonszám
+
+A felhasználó telefonszáma nemzetközi formátumban.  
+Opcionális mező.
+
+---
+
+### Nyelv módosítása
+
+A felhasználó egyéni felhasználói felület nyelve.  
+Felülírja az alkalmazás alapértelmezett nyelvét.
+
+---
+
+### Nem / Családi állapot / Születési dátum
+
+Opcionális személyes adatok.  
+Elsősorban HR vagy belső nyilvántartási célokat szolgálnak.
+
+---
+
+### Slack tag azonosító
+
+A felhasználó Slack azonosítója.  
+Integrációk és értesítések esetén hasznos.
+
+---
+
+### Lakcím
+
+A felhasználó lakcíme szöveges formában.
+
+---
+
+### Névjegy
+
+Rövid bemutatkozás vagy aláírás.  
+Belső kommunikációban és megjelenítésekben használható.
+
+---
+
+## Sürgősségi kapcsolatok fül
+
+Ebben a szekcióban adhatók meg azok a személyek, akik vészhelyzet esetén értesíthetők.
+
+### Új sürgősségi kapcsolat hozzáadása
+
+Az Új létrehozása gombra kattintva új kapcsolat rögzíthető az alábbi adatokkal:
+
+- Név (kötelező)  
+- Mobil telefonszám (kötelező)  
+- Kapcsolat típusa (pl. házastárs, szülő) (kötelező)  
+- E-mail cím (opcionális)  
+- Cím (opcionális)  
+
+A rögzített kapcsolatok listanézetben jelennek meg, ahol később szerkeszthetők vagy törölhetők.
+
+:::warning
+Javasolt legalább egy sürgősségi kapcsolat megadása biztonsági és HR-folyamatok támogatása érdekében.
+:::
+
+---
+
+## Dokumentumok fül
+
+A Dokumentumok fülön a felhasználó a profiljához kapcsolódó fájlokat tölthet fel és kezelhet.
+
+### Fájl hozzáadása
+
+A Hozzáad fájlok gombra kattintva új dokumentum tölthető fel.
+
+A feltöltéshez szükséges:
+
+- Fájl neve (kötelező)  
+- Fájl kiválasztása (kötelező)  
+
+A feltöltött dokumentumok a profilhoz kapcsolódva kerülnek tárolásra.
+
+---
+
+## Mentés
+
+A módosítások után kattints a Mentés gombra.
+
+:::tip
+A változások azonnal érvénybe lépnek.
+:::
+
+---
+
+:::warning Fontos megjegyzések
+A profil beállítások kizárólag a saját felhasználói fiókra vonatkoznak.  
+Bizonyos mezők (pl. e-mail cím) megváltoztatása hatással lehet a bejelentkezésre és értesítésekre.  
+Személyes adatok kezelése a vonatkozó adatvédelmi szabályzat szerint történik.
+:::
+
+

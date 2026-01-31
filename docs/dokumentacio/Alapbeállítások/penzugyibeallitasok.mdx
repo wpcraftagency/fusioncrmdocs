@@ -1,0 +1,196 @@
+---
+title: Pénzügyi beállítások
+description: Pénzügyi beállítások
+keywords:
+  - hellopack
+sidebar_label: Pénzügyi beállítások
+sidebar_position: 9
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-file-invoice-dollar text-primary" /> Pénzügyi beállítások
+
+A **Pénzügyi beállítások** menüpontban a FusionCRM **számlázással kapcsolatos működése** konfigurálható.  
+Itt határozható meg a számlák **megjelenése**, **sorszámozása**, **sablonja**, **fizetési információi**, valamint az esetleges **külső könyvelési integrációk** (pl. **QuickBooks**).
+
+---
+
+## Számla beállítások
+
+Ebben a szekcióban a számlák **alapértelmezett megjelenése és működése** állítható be.
+
+### Számla logó
+
+A számlán megjelenő **céges logó** feltöltése.  
+Ez a logó **minden generált számlán automatikusan megjelenik**.
+
+---
+
+### Hivatalos aláíró aláírása
+
+Lehetőség van egy **aláíráskép** feltöltésére, amely a számlák alján jelenik meg  
+(pl. ügyvezető vagy pénzügyi felelős aláírása).
+
+---
+
+### Nyelv
+
+Meghatározza a **számla nyelvét** (pl. Magyar, English).  
+Ez a számla **szövegezésére és felirataira** vonatkozik.
+
+---
+
+### Esedékesség
+
+Megadható, hogy a számla kiállítását követően **hány nap múlva válik esedékessé**  
+(pl. **15 nap**).
+
+---
+
+### Emlékeztetők
+
+- **Emlékeztető küldése előtte** – hány nappal az esedékesség előtt menjen értesítés  
+- **Emlékeztető küldése utána** – hány nappal az esedékesség után menjen értesítés  
+
+:::tip
+Az emlékeztetők segítenek csökkenteni a késedelmes fizetések számát.
+:::
+
+---
+
+### Megjelenítési opciók
+
+Beállítható, hogy a számlán megjelenjen-e:
+
+- **Adószám**  
+- **HSN/SAC kód**  
+- **Adókiszámítási üzenet**  
+- **Számla állapota** (pl. fizetett, lejárt)  
+- **Megbízható aláíró jelzése**
+
+---
+
+### Ügyféladatok megjelenítése
+
+Kiválasztható, hogy a számlán szerepeljen-e:
+
+- **Ügyfél neve**  
+- **Cég neve**  
+- **Ügyfél e-mail címe**  
+- **Telefonszám**  
+- **Cím**  
+- **Kapcsolódó projekt**
+
+---
+
+### Feltételek és szabályok
+
+Szabad szöveges mező, ahol a számlára kerülő **jogi vagy üzleti megjegyzések** adhatók meg  
+(pl. *„Thank you for your business.”*).
+
+---
+
+### Egyéb információ
+
+További, számlán megjelenő **információk megadása**.
+
+---
+
+## Számla sablon
+
+Ebben a fülben választható ki a számla **vizuális sablonja**.  
+A FusionCRM több **előre elkészített számlasablont** kínál, amelyek eltérő elrendezésűek és stílusúak.
+
+A kiválasztott sablon **az összes újonnan létrehozott számlára automatikusan alkalmazásra kerül**.
+
+---
+
+## Előtag beállítások
+
+Itt határozható meg a különböző **dokumentumtípusok sorszámozási logikája**.
+
+Beállítható dokumentumtípusok például:
+
+- **Számla** (pl. INV#001)  
+- **Jóváírás** (pl. CN#001)  
+- **Ajánlat**  
+- **Ajánlatkérés**  
+- **Rendelés**  
+- **Proposal**
+
+Minden dokumentumtípusnál megadható:
+
+- **Előtag**  
+- **Elválasztó karakter**  
+- **Sorszám hossza**  
+- **Példa sorszám** (automatikusan generálódik)
+
+:::warning
+⚠️ **Fontos:** a sorszámozás módosítása **nem érinti a korábban létrehozott dokumentumokat**.
+:::
+
+---
+
+## Egységek
+
+Ebben a részben kezelhetők a számlán és ajánlatokon használt **mértékegységek**  
+(pl. **db**, **pcs**).
+
+- Új egység hozzáadható  
+- Egy egység alapértelmezetté tehető  
+- Nem alapértelmezett egységek törölhetők  
+
+---
+
+## QuickBooks beállítások
+
+A FusionCRM támogatja a **QuickBooks integrációt**.
+
+### Fontos tudnivaló
+
+A szinkronizáció **egyirányú**:
+
+- A FusionCRM-ben létrehozott **számlák és fizetések** átkerülnek a QuickBooks-ba  
+- A QuickBooks-ban létrehozott adatok **nem kerülnek vissza automatikusan** a CRM-be  
+
+:::warning
+A szinkronizáció csak **sikeres fiókcsatlakoztatás után** működik.
+:::
+
+### Beállítható elemek
+
+- **Környezet** (Teszt / Élő)  
+- **Client ID**  
+- **Client Secret**  
+- **Callback URL** (a QuickBooks alkalmazásban kell megadni)
+
+---
+
+## Számla fizetési részletek
+
+Ebben a szekcióban a számlákon megjelenő **fizetési információk** kezelhetők.
+
+### Fizetési részletek hozzáadása
+
+Megadható például:
+
+- **Banki átutalási adatok**  
+- **Bankszámlaszám**  
+- **Közlemény**  
+- **Egyéb fizetési instrukciók**
+
+---
+
+### QR-kód
+
+Lehetőség van **QR-kód feltöltésére**, amely megkönnyíti az azonnali fizetést.
+
+:::tip
+A QR-kód használata jelentősen gyorsíthatja a számlák kiegyenlítését.
+:::
+
+Ezek az adatok **automatikusan megjelennek a számlákon**.

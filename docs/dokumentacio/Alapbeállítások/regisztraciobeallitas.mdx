@@ -1,0 +1,91 @@
+---
+title: Regisztrációs beállítások
+description: Regisztrációs beállítások
+keywords:
+  - hellopack
+sidebar_label: Regisztrációs beállítások
+sidebar_position: 24
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/MemberCounter";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+
+
+## Ügyfélregisztráció jogi feltételeinek kezelése
+
+A FusionCRM **Regisztrációs beállításai** lehetővé teszik, hogy az új felhasználók (jellemzően ügyfelek) regisztrációja **jogilag megfelelő** és **átlátható módon** történjen.
+
+Ezzel biztosítod, hogy a felhasználók a regisztráció előtt **megismerjék és elfogadják** a vonatkozó feltételeket.
+
+---
+
+## Hol találod a Regisztrációs beállításokat?
+
+### Navigációs útvonal
+
+**Beállítások → Regisztrációs beállítások**
+
+Itt szabályozhatod, hogy **milyen feltételek jelenjenek meg** az ügyfél regisztráció során.
+
+---
+
+## Regisztrációs feltételek megjelenítése
+
+**„Regisztrációs feltételek megjelenítése”**
+
+Ez a kapcsoló határozza meg, hogy:
+
+- a regisztráció során megjelenjenek-e az **Általános Szerződési Feltételek (ÁSZF)**  
+- vagy más **jogi dokumentumok**
+
+### Opciók
+
+- **Bekapcsolva** → a feltételek megjelennek a regisztráció során  
+- **Kikapcsolva** → nincs feltétel megjelenítés  
+
+:::warning
+UK / EU környezetben jogi kockázatot jelenthet, ha a regisztrációs feltételek nem kerülnek megjelenítésre.
+:::
+
+:::tip
+Ügyfélportál vagy SaaS jellegű használat esetén mindig legyen bekapcsolva.
+:::
+
+---
+
+## Regisztrációs feltételek URL-je
+
+**„Regisztrációs feltételek megjelenítése – URL”**
+
+Itt kell megadnod annak az oldalnak a **hivatkozását**, ahol a jogi feltételek elérhetők.
+
+### Tipikus URL-ek
+
+- ÁSZF / Terms & Conditions  
+- Adatkezelési tájékoztató  
+- Felhasználási feltételek  
+
+**Példa:**  
+https://yourcompany.co.uk/terms-and-conditions
+
+Fontos, hogy:
+
+- az oldal **publikus** legyen  
+- **naprakész jogi tartalmat** tartalmazzon  
+- megfeleljen a **GDPR és UK GDPR** elvárásoknak  
+
+---
+
+## Beállítások mentése
+
+A módosítások véglegesítéséhez kattints a **„Mentés”** gombra.  
+A beállítás **azonnal életbe lép**, és minden új regisztrációra érvényes lesz.
+
+:::warning Fontos megjegyzések
+- A jogi feltételek URL-jét rendszeresen ellenőrizd  
+- Tartalmi változás esetén frissítsd az oldalt haladéktalanul  
+- A regisztrációs feltételeknek összhangban kell lenniük a cég hivatalos jogi dokumentumaival  
+:::

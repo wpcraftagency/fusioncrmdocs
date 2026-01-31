@@ -1,0 +1,117 @@
+---
+title: Értesítési beállítások
+description: Értesítési beállítások
+keywords:
+  - hellopack
+sidebar_label: Értesítési beállítások
+sidebar_position: 6
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-envelope text-primary" /> Értesítési beállítások
+
+Az **Értesítési beállítások** menü pontban szabályozható, hogy a felhasználó **milyen eseményekről**, **milyen csatornán keresztül** kapjon értesítéseket a FusionCRM rendszerből.  
+A beállítások **felhasználókként értendők**, és finomhangolást tesznek lehetővé a napi munkavégzéshez.
+
+---
+
+## Elérési út
+
+**Beállítások → Értesítési beállítások**
+
+---
+
+## Értesítési csatornák
+
+A felületen több értesítési csatorna érhető el külön füleken:
+
+- **E-mail** – értesítések e-mail formájában  
+- **Slack** – értesítések Slack integráción keresztül (ha engedélyezve van)  
+- **Push értesítés** – böngészőn vagy eszközön megjelenő értesítések (ha támogatott)  
+
+Minden csatorna **külön-külön konfigurálható**.
+
+---
+
+## E-mail értesítések fül
+
+Ezen a fülön kiválasztható, hogy a felhasználó **mely eseményekről** szeretne **e-mail értesítést** kapni.
+
+### Beállítás menete
+
+- Az egyes események mellett található **jelölőnégyzetek** segítségével engedélyezhetők az értesítések.  
+- Az **Összes kijelölése** opcióval az összes e-mail értesítés egyszerre bekapcsolható.  
+- A módosítások mentéséhez kattints a **Mentés** gombra.
+
+---
+
+### Elérhető e-mail értesítési események
+
+Az alábbi eseményekhez rendelhető e-mail értesítés:
+
+- Új költség létrehozása (admin vagy tag által)  
+- Költség állapotának módosítása  
+- Új támogatási jegy létrehozása  
+- Új szabadság kérelem  
+- Feladat befejezése  
+- Feladat állapotának frissítése  
+- Számla létrehozása vagy frissítése  
+- Hozzászólás érkezése  
+- Új termék vásárlási kérelem  
+- Érdeklődő (lead) értesítések  
+- Rendelés létrehozása vagy frissítése  
+- Felhasználó csatlakozása meghívás alapján  
+- Utókövetési emlékeztető  
+- Felhasználó regisztrációja vagy admin általi hozzáadás  
+- Alkalmazott projekthez rendelése  
+- Új értesítés közzététele  
+- Felhasználó feladathoz rendelése  
+
+:::note
+(A pontos eseménylista a rendszer verziójától és engedélyezett moduloktól függően változhat.)
+:::
+
+---
+
+## Slack értesítések fül
+
+A **Slack** fülön a Slack integráción keresztül érkező értesítések konfigurálhatók.
+
+- Az itt beállított események a felhasználó **Slack fiókjába** érkeznek.  
+- A funkció **csak akkor érhető el**, ha a Slack integráció aktív és a felhasználó **Slack azonosítója** meg van adva a profilban.
+
+:::tip
+Slack értesítések használata ajánlott csapatmunkánál és gyors reagálást igénylő folyamatoknál.
+:::
+
+---
+
+## Push értesítések fül
+
+A **Push értesítés** fülön a valós idejű, böngészőben vagy eszközön megjelenő értesítések kezelhetők.
+
+- Ezek az értesítések **gyors visszajelzést** biztosítanak fontos eseményekről.  
+- A működés függ a böngésző és az eszköz **értesítési engedélyeitől**.
+
+---
+
+## Mentés
+
+A beállítások módosítása után kattints a **Mentés** gombra.
+
+:::tip
+✔️ A változtatások azonnal érvénybe lépnek.
+:::
+
+---
+
+:::warning Fontos megjegyzések
+A túl sok értesítés csökkentheti a hatékonyságot – érdemes csak a releváns eseményeket engedélyezni.  
+Kritikus folyamatok (pl. **feladat**, **számla**, **támogatási jegy**) esetén ajánlott legalább **egy értesítési csatorna** bekapcsolása.  
+Az értesítési beállítások **nem írják felül** a globális rendszerkorlátozásokat.
+:::
+```

@@ -1,0 +1,115 @@
+---
+title: Biztonsági beállítások
+description: Biztonsági beállítások
+keywords:
+  - hellopack
+sidebar_label: Biztonsági beállítások
+sidebar_position: 20
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-shield-halved text-primary" /> Biztonsági beállítások
+
+A FusionCRM **Biztonsági beállításai** lehetővé teszik, hogy megvédd a fiókodat az illetéktelen hozzáféréstől.  
+A **kétfaktoros hitelesítés (2FA)** egy extra biztonsági lépcsőt ad a belépéshez, amely jelentősen csökkenti az **adatszivárgás** és a **fiókfeltörés** kockázatát.
+
+---
+
+## Hol találod a Biztonsági beállításokat?
+
+### Navigációs útvonal
+
+**Beállítások → Biztonsági beállítások**
+
+Itt tudod engedélyezni és kezelni a **kétfaktoros hitelesítési megoldásokat**.
+
+---
+
+## Mi az a kétfaktoros hitelesítés (2FA)?
+
+A 2FA azt jelenti, hogy a bejelentkezéshez:
+
+- megadod a **jelszavadat**,  
+- majd egy **egyszer használatos kódot** is, amelyet csak te kapsz meg.
+
+Ez biztosítja, hogy:
+
+- akkor sem tudnak belépni a fiókodba, ha a jelszavad illetéktelen kezekbe kerül,  
+- érzékeny **ügyfél- és üzleti adatok** védve maradnak.
+
+---
+
+## 2FA beállítás e-mail használatával
+
+### Hogyan működik?
+
+- Bejelentkezéskor a rendszer egy **egyszer használatos kódot** küld az e-mail címedre  
+- A kód megadásával tudsz belépni a fiókba  
+
+### Előnyei
+
+- Gyors és egyszerű beállítás  
+- Nem igényel külön alkalmazást  
+- Ideális kisebb csapatoknak vagy admin felhasználóknak  
+
+### Bekapcsolás lépései
+
+1. Kattints az **„Engedélyezés”** gombra az e-mailes hitelesítésnél  
+2. Kövesd a képernyőn megjelenő utasításokat  
+3. A beállítás **azonnal érvénybe lép**
+
+:::tip
+E-mail alapú 2FA jó választás, ha gyorsan szeretnél extra védelmet bevezetni technikai előkészületek nélkül.
+:::
+
+---
+
+## 2FA beállítás Google Authenticator alkalmazással
+
+### Hogyan működik?
+
+- A **Google Authenticator** alkalmazás **időalapú biztonsági kódokat** generál  
+- A kód akkor is elérhető, ha a telefonod **offline módban** van  
+
+### Előnyei
+
+- Magasabb szintű biztonság  
+- Nem függ az e-mail elérhetőségétől  
+- Ideális nagyobb csapatoknak és érzékeny adatok kezeléséhez  
+
+### Bekapcsolás lépései
+
+1. Telepítsd a **Google Authenticator** alkalmazást (Android / iOS)  
+2. Kattints az **„Engedélyezés”** gombra  
+3. Olvasd be a **QR-kódot** az alkalmazással  
+4. Add meg a generált kódot a megerősítéshez  
+
+:::warning
+A Google Authenticator elvesztése esetén a hozzáférés helyreállítása körülményes lehet, ezért a biztonsági kulcsról készíts mentést.
+:::
+
+---
+
+## Melyik megoldást válaszd?
+
+| Használati helyzet | Ajánlott megoldás |
+|-------------------|------------------|
+| Egyéni felhasználó | E-mail alapú 2FA |
+| Ügynökség / csapat | Google Authenticator |
+| Ügyféladatok kezelése | Google Authenticator |
+| GDPR-érzékeny környezet | Google Authenticator |
+
+---
+
+## Jó gyakorlatok (Best Practice)
+
+:::warning Fontos megjegyzések
+- Adminisztrátori fiókoknál **mindig** használd a 2FA-t  
+- Ügyféladatokat kezelő munkatársaknál **tedd kötelezővé**  
+- Google Authenticator esetén készíts **biztonsági mentést** a kulcsról  
+- Rendszeresen ellenőrizd, hogy **aktív-e a 2FA**
+:::

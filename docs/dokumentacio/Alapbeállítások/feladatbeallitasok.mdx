@@ -1,0 +1,157 @@
+---
+title: Feladat beállítások
+description: Feladat beállítások
+keywords:
+  - hellopack
+sidebar_label: Feladat beállítások
+sidebar_position: 19
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-list-check text-primary" /> Feladat beállítások
+
+A FusionCRM **Feladat** modulja segít a napi teendők, projektfeladatok és ügyfélhez kapcsolódó munkák **strukturált kezelésében**.  
+A **Feladat beállítások** segítségével automatizálhatod az emlékeztetőket, szabályozhatod az ügyfelek által látható adatokat, és **egységes működést** alakíthatsz ki a csapaton belül.
+
+---
+
+## Hol találod a Feladat beállításokat?
+
+### Navigációs útvonal
+
+**Beállítások → Feladat beállítások**
+
+Itt a **teljes feladatkezelési logika** testreszabható.
+
+---
+
+## Feladat emlékeztetők beállítása
+
+### Emlékeztető küldése a határidő előtt
+
+**„Feladat emlékeztető küldése előtte X nappal a határidő előtt”**
+
+Itt adhatod meg, hány nappal a határidő előtt kapjon értesítést a feladat felelőse.
+
+**Példa:**  
+2 nap → a rendszer 2 nappal a határidő előtt emlékeztet.
+
+---
+
+### Emlékeztető küldése a határidő napján
+
+**„Feladat emlékeztető küldése a határidő napján”**
+
+- **Igen** → értesítés a határidő napján  
+- **Nem** → nincs aznapi emlékeztető  
+
+:::tip
+Fontos ügyfélfeladatoknál érdemes bekapcsolni.
+:::
+
+---
+
+### Emlékeztető küldése a határidő után
+
+**„Feladat emlékeztető küldése utána X nappal a határidő után”**
+
+Ez segít, hogy:
+
+- ne maradjanak elfelejtett feladatok  
+- időben történjen utánkövetés  
+
+---
+
+## Feladat állapot alapértelmezése
+
+### „Állapot”
+
+Meghatározza, hogy egy újonnan létrehozott feladat **milyen státusszal induljon**.
+
+**Példa:**  
+Befejezetlen
+
+Ez biztosítja az **egységes feladatkezelést** a csapaton belül.
+
+---
+
+## Projekt kötelezővé tétele
+
+### „Is project required?”
+
+- **Igen** → minden feladatot projekthez kell rendelni  
+- **Nem** → önálló feladatok is létrehozhatók  
+
+:::tip
+Projektalapú ügynökségeknél érdemes kötelezővé tenni.
+:::
+
+---
+
+## Feladat lista alapértelmezett hossza
+
+### „Feladat tábla alapértelmezett hossza”
+
+Ez határozza meg, hány feladat jelenjen meg egyszerre a feladatlistában.
+
+**Példa:**  
+10 → egyszerre 10 feladat látható
+
+---
+
+## Ügyfél által látható feladatmezők
+
+Ez a szekció szabályozza, **mit láthat az ügyfél** a feladataiból a rendszerben.
+
+### Látható mezők lehetnek többek között
+
+- Feladat kategória  
+- Esedékesség dátuma  
+- Címke  
+- Prioritás  
+- Hozzászólások  
+- Időnaplók  
+- Rögzített órák  
+- Projekt  
+- Felelős  
+- Privát tétel  
+- Fájl csatolások  
+- Jegyzetek  
+- Egyedi mezők  
+- Kezdés dátuma  
+- Leírás  
+- Állapot  
+- Időbecslés  
+- Alfeladatok  
+- Előzmények  
+- Feladat link másolása  
+
+---
+
+### Miért fontos ez?
+
+- Teljes kontroll az ügyfél felé megosztott információkról  
+- Átlátható, de biztonságos együttműködés  
+- Professzionális ügyfélélmény  
+
+---
+
+## Beállítások mentése
+
+A módosítások érvényesítéséhez kattints a **„Mentés”** gombra.  
+A változások **azonnal életbe lépnek**.
+
+---
+
+## Jó gyakorlatok (Best Practice)
+
+:::warning Fontos megjegyzések
+- Használj emlékeztetőket minden határidős feladathoz  
+- Projektalapú működésnél tedd kötelezővé a projekthez rendelést  
+- Csak a valóban szükséges mezőket tedd láthatóvá az ügyfélnek  
+- Privát belső megjegyzéseket ne ossz meg ügyféloldalon  
+:::

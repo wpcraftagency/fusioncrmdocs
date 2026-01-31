@@ -1,0 +1,226 @@
+---
+title: Lead kapcsolattartó
+description: Leads – Lead kapcsolattartó
+keywords:
+  - hellopack
+sidebar_label: Lead kapcsolattartó
+sidebar_position: 2
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-address-book text-primary" /> Lead kapcsolattartó
+
+## Modul célja és szerepe
+
+A **Lead kapcsolattartó modul** a FusionCRM-ben az érdeklődők **elsődleges rögzítésére és kezelésére** szolgál. Ide kerül minden:
+
+- manuálisan felvitt érdeklődés,  
+- weboldali űrlapról érkező lead,  
+- importált lead adat.  
+
+Ez a modul képezi a **sales pipeline belépési pontját**.
+
+---
+
+## Kapcsolatfelvételek lista nézet
+
+### Elérés
+
+**Bal oldali menü:**  
+**Leads → Lead kapcsolattartó**
+
+---
+
+### Lista nézet funkciói
+
+A lista táblázatos formában jeleníti meg a leadeket az alábbi fő adatokkal:
+
+- Kapcsolattartó neve  
+- E-mail  
+- Kapcsolattartó (assigned user)  
+- Hozzáadta  
+- Létrehozás dátuma  
+- Műveletek  
+
+Amennyiben nincs rögzített adat, a rendszer  
+**„Nincs rendelkezésre álló adat”** üzenetet jelenít meg.
+
+---
+
+## Kapcsolatfelvétel hozzáadása (Manuális lead rögzítés)
+
+### Új lead létrehozása
+
+Kattints a **„Kapcsolatfelvétel hozzáadása”** gombra.
+
+Megnyílik a **Kapcsolatfelvételi információ hozzáadása** űrlap.
+
+---
+
+### Kapcsolatfelvételi adatok szekció
+
+#### Kötelező mezők
+
+- Név  
+- Ügylet neve (ha ügylet jön létre)  
+- Értékesítési csatorna  
+- Ügylet szakasz  
+- Ügylet értéke  
+- Zárási dátum  
+
+---
+
+### Alap lead adatok
+
+- Megszólítás  
+- Név  
+- E-mail  
+  *(Az e-mail cím ajánlatküldéshez és további kommunikációhoz lesz használva)*  
+- Érdeklődési forrás  
+- Hozzáadva által  
+- Kapcsolattartó (assigned sales)  
+
+---
+
+## Ügylet automatikus létrehozása leadből
+
+### „Létrehozás Ügylet” opció
+
+Ha ez a jelölőnégyzet aktív:
+
+- a rendszer automatikusan létrehoz egy deal/ügyletet a leadhez,  
+- a lead azonnal bekerül az értékesítési pipeline-ba.
+
+---
+
+### Automatikus konvertálás
+
+**Opció:**  
+*Auto convert lead to client when deal stage is set to ‘Win’*
+
+Ez azt jelenti, hogy:
+
+- **„Win” státusz** esetén a lead automatikusan **ügyféllé alakul**,  
+- nem szükséges manuális konvertálás.
+
+:::tip
+Ez különösen ajánlott **standardizált sales folyamatoknál**.
+:::
+
+---
+
+## Ügylet adatok (Sales Pipeline)
+
+Az ügylethez kapcsolódó fő mezők:
+
+- Ügylet neve  
+- Értékesítési csatorna (pl. Sales Pipeline)  
+- Ügylet szakasz (pl. Generated)  
+- Ügylet értéke (valuta szerint)  
+- Zárási dátum  
+- Ügylet kategória  
+- Ügylet ügynök  
+- Kapcsolódó termékek  
+- Ajánlatfigyelő (proposal owner)  
+
+---
+
+## Cég adatai szekció
+
+Opcionálisan megadható:
+
+- Cég neve  
+- Weboldal  
+- Mobil  
+- Irodai telefonszám  
+- Címadatok  
+
+Ez lehetővé teszi a lead későbbi **B2B ügyféllé konvertálását adatvesztés nélkül**.
+
+---
+
+## Érdeklődő űrlap (Lead Form)
+
+### Funkció célja
+
+Az **Érdeklődő űrlap** egy beágyazható webes lead capture eszköz, amely:
+
+- közvetlenül a FusionCRM-be rögzíti az érdeklődéseket,  
+- csökkenti a manuális adatbevitel hibáit.
+
+---
+
+### Mezők kezelése
+
+Az űrlap szerkesztőben:
+
+- ki- és bekapcsolhatók mezők,  
+- beállítható, mely mezők kötelezőek,  
+- sorrend módosítható.
+
+**Példa mezők:**
+
+- Name  
+- Email  
+- Company Name  
+- Website  
+- Address  
+- Mobile  
+- Message  
+- City, State, Country  
+- Source  
+- Product  
+
+---
+
+### Űrlap előnézet és publikálás
+
+#### Beágyazás weboldalba
+
+A rendszer **iframe kódot** generál, amely:
+
+- weboldalba illeszthető,  
+- mérete (szélesség, magasság) testre szabható.
+
+---
+
+#### Közvetlen link
+
+Elérhető:
+
+- direkt URL az űrlaphoz,  
+- opcionális logó megjelenítéssel.
+
+Ez ideális:
+
+- landing page-hez,  
+- kampány URL-hez,  
+- hirdetésekhez (Google Ads, Meta).
+
+---
+
+## Lead importálás
+
+### Import funkció
+
+A **Leads → Importálás** menüpont alatt elérhető.
+
+### Támogatott fájlformátumok
+
+- XLS  
+- XLSX  
+- CSV  
+
+---
+
+### Fontos szabályok
+
+:::warning Fontos megjegyzések
+- Dátum formátum: **Y-m-d** (pl. 2022-04-21)  
+- A fájl tartalmazhat fejlécsort (külön jelölhető)  
+- Ajánlott mindig a **Sample Import File** letöltése és használata
+:::

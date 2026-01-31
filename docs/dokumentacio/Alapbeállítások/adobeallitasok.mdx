@@ -1,0 +1,82 @@
+---
+title: Adóbeállítások
+description: Adóbeállítások
+keywords:
+  - hellopack
+sidebar_label: Adóbeállítások
+sidebar_position: 11
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-percent text-primary" /> Adóbeállítások
+
+A Beállítások › Adóbeállítások menüpontban hozhatók létre és kezelhetők azok az adókulcsok, amelyeket a rendszer a számlákon, ajánlatokon és egyéb pénzügyi dokumentumokon használ.
+
+Az itt megadott adók globálisan elérhetők, és később kiválaszthatók:
+
+- számlákhoz,  
+- ajánlatokhoz,  
+- termékekhez vagy szolgáltatásokhoz (modulfüggően).
+
+---
+
+## Adó hozzáadása
+
+Új adókulcs létrehozásához kattintson az **„+ Adó hozzáadása”** gombra.
+
+A megjelenő ablakban az alábbi mezők tölthetők ki:
+
+### Adó neve
+
+Az adó megnevezése (pl. ÁFA 27%, ÁFA 0%, EU ÁFA mentes).  
+Ez a név jelenik meg a kiválasztáskor és a dokumentumokon.
+
+---
+
+### Mérték (%)
+
+Az adó százalékos mértéke.  
+Csak numerikus érték adható meg (pl. 27, 5, 0).
+
+:::warning Fontos
+A rendszer az itt megadott százalék alapján automatikusan számolja ki az adó összegét a nettó értékből.
+:::
+
+---
+
+## Mentés és kezelés
+
+A **Mentés** gombra kattintva az adó azonnal elérhetővé válik a rendszerben.
+
+A létrehozott adók a listában jelennek meg, ahol később:
+
+- szerkeszthetők,  
+- vagy (ha még nem használja őket aktív dokumentum) törölhetők.
+
+---
+
+## Gyakorlati példák
+
+Tipikus adóbeállítások:
+
+- **ÁFA 27%** → Mérték: 27  
+- **ÁFA 5%** → Mérték: 5  
+- **Adómentes** → Mérték: 0  
+
+Ez lehetővé teszi, hogy:
+
+- különböző ügyfelekhez eltérő adózást használjon,  
+- belföldi és nemzetközi számlázást is kezeljen,  
+- jogszabályi megfelelés mellett számlázzon.
+
+---
+
+## Jó gyakorlatok
+
+- ✅ Érdemes előre létrehozni minden gyakran használt adókulcsot  
+- ✅ Az adók elnevezésénél legyen egyértelmű a százalék és a jogcím  
+- ⚠️ Már használt adó törlése adatinkonzisztenciát okozhat

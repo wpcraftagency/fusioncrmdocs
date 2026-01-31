@@ -21,9 +21,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/hogyan-hasznald-a-hub-oldalt"
+            to="/docs/dokumentacio/"
           >
-            Hogyan használd a HUB oldalt ?{" "}
+            Kezd itt!{" "}
           </Link>{" "}
         </div>{" "}
       </div>{" "}
@@ -39,35 +39,7 @@ function Gyakoriak() {
         <div className="row">
           <div className="gallery">
             <div className="sub-heading">
-              <h2>Gyakran feltett kérdések</h2>
-            </div>
-
-            <div className="card">
-              <div className="card-header">
-                <FontAwesomeIcon icon="fa-duotone fa-file-invoice fa-2xl text-success" />
-                <h4>Hol találom a számlát?</h4>
-              </div>
-              <p>
-                A számlákat könnyedén (és bármikor) elérheted a Console oldalon
-                keresztül.
-              </p>
-              <VersionedLink to="/docs/sugo/szamlazas-es-elofizetesek/hol-talalom-a-szamlat">
-                Hol találom a számlát? <ArrowRight className="arrow" />
-              </VersionedLink>
-            </div>
-
-            <div className="card">
-              <div className="card-header">
-                <FontAwesomeIcon icon="fa-duotone fa-credit-card fa-2xl text-success" />
-                <h4>Hogyan adhatok meg új bankkártya adatokat?</h4>
-              </div>
-              <p>
-                Console -> Fizetési módok menüpontot. Itt kattints a kék Új
-                bankkártya hozzáadása gombra.
-              </p>
-              <VersionedLink to="/docs/sugo/szamlazas-es-elofizetesek/elofizeteshet-kapcsolodo-kartya-csereje">
-                Új bankkártya hozzáadása <ArrowRight className="arrow" />
-              </VersionedLink>
+              <h2>Gyakran felkeresett dokumentációk</h2>
             </div>
 
             <div className="card">
@@ -79,46 +51,18 @@ function Gyakoriak() {
                 Az előfizetésed csomagját (amennyiben van több csomag) bármikor
                 megváltoztathatod.
               </p>
-              <VersionedLink to="/docs/sugo/szamlazas-es-elofizetesek/elofizetes-csomagvaltas">
+              <VersionedLink to="/docs/dokumentacio/Alapbeállítások/csomagvaltas">
                 Előfizetés csomagváltása <ArrowRight className="arrow" />
               </VersionedLink>
             </div>
 
             <div className="card">
               <div className="card-header">
-                <FontAwesomeIcon icon="fa-duotone fa-link-simple-slash fa-2xl text-success" />
-                <h4>A követett hivatkozás érvényessége lejárt</h4>
-              </div>
-              <p>
-                Ezt a hibaüzenetet kapod? Gond van a weboldal
-                tárhelybeállításával.
-              </p>
-              <VersionedLink to="/docs/knowledgebase/hibaelharitas/wordpress/a-kovetett-hivatkozas-ervenyessege-lejart">
-                Probléma megoldása <ArrowRight className="arrow" />
-              </VersionedLink>
-            </div>
-
-            <div className="card">
-              <div className="card-header">
                 <FontAwesomeIcon icon="fa-duotone fa-paintbrush-pencil fa-2xl text-success" />
-                <h4>A sablon nem tartalmazza a style.css fájlt</h4>
+                <h4>FusionCRM téma testreszabása</h4>
               </div>
-              <p>Valószínűleg nem WordPress sablont próbálsz telepíteni.</p>
-              <VersionedLink to="/docs/knowledgebase/hibaelharitas/wordpress/sablon-telepitesi-hiba">
-                Probléma megoldása <ArrowRight className="arrow" />
-              </VersionedLink>
-            </div>
-
-            <div className="card">
-              <div className="card-header">
-                <FontAwesomeIcon icon="fa-duotone fa-boxes-stacked fa-2xl text-success" />
-                <h4>Bővítmény telepítési hiba</h4>
-              </div>
-              <p>
-                Hiba: "A csomag nem telepíthető. Érvénytelen bővítményeket
-                találtunk."
-              </p>
-              <VersionedLink to="/docs/knowledgebase/hibaelharitas/wordpress/bovitmeny-telepitesi-hiba">
+              <p>Szabd testre a CRM-et a saját céged brandjére.</p>
+              <VersionedLink to="/docs/dokumentacio/Alapbeállítások/temabeallitasok">
                 Probléma megoldása <ArrowRight className="arrow" />
               </VersionedLink>
             </div>

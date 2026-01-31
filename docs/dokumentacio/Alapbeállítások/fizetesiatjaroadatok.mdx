@@ -1,0 +1,141 @@
+---
+title: Fizetési átjáró adatok
+description: Fizetési átjáró adatok
+keywords:
+  - hellopack
+sidebar_label: Fizetési átjáró adatok
+sidebar_position: 8
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-credit-card text-primary" /> Fizetési átjáró adatok
+
+A **Fizetési átjáró adatok** menüpontban konfigurálhatók a FusionCRM rendszerhez kapcsolódó **online fizetési szolgáltatók**.  
+Ezek az átjárók teszik lehetővé az **online fizetések fogadását** számlák, rendelések vagy előfizetések esetén.
+
+---
+
+## Elérési út
+
+**Beállítások → Fizetési átjáró adatok**
+
+---
+
+## Áttekintés
+
+A felület felső részén külön füleken érhetők el a támogatott fizetési szolgáltatók.  
+Egy vállalat **több átjárót is használhat**, azonban **csak az aktivált átjárók** lesznek elérhetők az ügyfelek számára.
+
+Jelenleg támogatott fizetési átjárók például:
+
+- **PayPal**  
+- **Stripe**  
+- **Razorpay**  
+- **Paystack**  
+- **Mollie**  
+- **Payfast**  
+- **Authorize.net**
+
+:::note
+(A lista a rendszer verziójától és régiós beállításoktól függően bővülhet.)
+:::
+
+---
+
+## Fizetési átjáró állapota
+
+Minden fizetési szolgáltató esetében külön kapcsolóval állítható:
+
+- **Aktív** – az átjáró használható éles fizetésekhez  
+- **Inaktív** – az átjáró nem jelenik meg fizetési lehetőségként  
+
+A beállítás módosítása után a **Mentés** gombra kattintva lép életbe a változás.
+
+---
+
+## Környezet kiválasztása (Teszt / Éles)
+
+Egyes szolgáltatók (pl. **Stripe**) esetében választható:
+
+- **Teszt környezet** – fejlesztési és ellenőrzési célokra  
+- **Éles környezet** – valódi tranzakciók lebonyolításához  
+
+:::warning
+⚠️ Éles használat előtt **erősen ajánlott** a teszt környezet kipróbálása.
+:::
+
+---
+
+## Példa: Stripe fizetési átjáró beállítása
+
+A **Stripe** fülön az alábbi adatok adhatók meg:
+
+### Stripe állapot
+
+Engedélyezi vagy letiltja a Stripe fizetési módot.
+
+---
+
+### API kulcsok (Teszt / Éles)
+
+- **Közzétehető kulcs (Publishable key)** – kliens oldali azonosításhoz  
+- **Titkos kulcs (Secret key)** – szerver oldali kommunikációhoz  
+
+**Mindkét mező kötelező** az adott környezet használatához.
+
+---
+
+### Webhook aláíró titok
+
+A Stripe által küldött **webhook események hitelesítésére** szolgál.  
+Biztosítja, hogy csak **valós Stripe események** kerüljenek feldolgozásra.
+
+---
+
+### Webhook URL
+
+A rendszer automatikusan generál egy **webhook URL-t**, amelyet a Stripe felületén kell megadni.
+
+**Ajánlott események:**
+
+- `invoice.payment_succeeded`  
+- `invoice.payment_failed`  
+- `payment_intent.succeeded`  
+- `payment_intent.payment_failed`  
+
+A **Másolás** gombbal az URL könnyen kimásolható.
+
+---
+
+## Egyéb fizetési átjárók
+
+A többi fizetési szolgáltató (**PayPal, Mollie, Razorpay** stb.) hasonló logika szerint működik:
+
+- **Aktiválás / deaktiválás**  
+- **API kulcsok vagy hitelesítési adatok** megadása  
+- **Környezet (teszt / éles)** kiválasztása  
+
+Az egyes szolgáltatók pontos mezői **eltérhetnek a szolgáltató specifikációja szerint**.
+
+---
+
+## Mentés
+
+A beállítások megadása vagy módosítása után kattints a **Mentés** gombra.
+
+:::tip
+✔️ A változtatások azonnal érvénybe lépnek.
+:::
+
+---
+
+:::warning Fontos megjegyzések
+Fizetési átjárók beállítását **csak adminisztrátori jogosultsággal** rendelkező felhasználók végezzék.  
+Hibás **API kulcsok** esetén a fizetések **sikertelenek lehetnek**.  
+**Éles kulcsokat soha ne ossz meg** jogosulatlan személyekkel.
+:::
+```

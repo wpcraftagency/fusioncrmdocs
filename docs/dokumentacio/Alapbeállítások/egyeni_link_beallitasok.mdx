@@ -1,0 +1,145 @@
+---
+title: Egyéni link beállítások
+description: Egyéni link beállítások
+keywords:
+  - hellopack
+sidebar_label: Egyéni link beállítások
+sidebar_position: 22
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-link text-primary" /> Egyéni link beállítások
+
+## Gyors elérés fontos külső oldalakhoz
+
+A FusionCRM **Egyéni link beállításai** lehetővé teszik, hogy külső hivatkozásokat adj hozzá a rendszerhez, amelyeket a felhasználók **közvetlenül a CRM-en belül** érhetnek el.
+
+Ez ideális megoldás:
+
+- belső dokumentációkhoz  
+- ügyfélportálokhoz  
+- külső eszközökhöz (pl. Google Drive, Notion, számlázó, support rendszer)
+
+---
+
+## Hol találod az Egyéni link beállításokat?
+
+### Navigációs útvonal
+
+**Beállítások → Egyéni link beállítások**
+
+Ezen az oldalon kezelheted az **összes egyéni hivatkozást**.
+
+---
+
+## Új egyéni link hozzáadása
+
+Kattints az **„Új Egyéni Link Hozzáadása”** gombra.
+
+Ekkor megjelenik az **új link létrehozására szolgáló ablak**.
+
+---
+
+## Egyéni link mezők magyarázata
+
+### Link címe
+
+Ez a megnevezés:
+
+- megjelenik a felhasználók számára  
+- egyértelműen jelzi, mire mutat a link  
+
+**Példa:**
+
+- „Projekt dokumentáció”  
+- „Ügyfél onboarding anyag”  
+- „Számlázás”
+
+---
+
+### URL
+
+Ide add meg a **teljes hivatkozást**, ahová a link mutat.
+
+**Példa:**
+
+- https://drive.google.com/…  
+- https://notion.so/…  
+- https://portal.yourceg.co.uk  
+
+---
+
+### Megtekintheti (hozzáférés)
+
+Itt határozhatod meg, **kik láthatják a linket**.
+
+Elérhető opciók például:
+
+- **Employee** – belső munkatársak  
+- **Client** – ügyfelek  
+
+Ez biztosítja, hogy:
+
+- belső linkek ne legyenek láthatók ügyfeleknek  
+- ügyfélnek szánt linkek csak számukra jelenjenek meg  
+
+:::warning
+Hibás jogosultság beállítás esetén bizalmas belső információk válhatnak elérhetővé ügyfelek számára.
+:::
+
+---
+
+### Állapot (Status)
+
+- **Aktív** – a link megjelenik és használható  
+- **Inaktív** – a link nem látható  
+
+Ez lehetővé teszi, hogy **ideiglenesen kikapcsolj linkeket törlés nélkül**.
+
+---
+
+## Mentés
+
+A link létrehozásához kattints a **„Mentés”** gombra.  
+A módosítás **azonnal érvénybe lép**.
+
+---
+
+## Tipikus felhasználási példák
+
+### Ügynökségeknek
+
+- Google Drive projekt mappa  
+- Kreatív brief  
+- Kampány riport dashboard  
+
+---
+
+### Ügyfélportálhoz
+
+- Szerződés  
+- Onboarding útmutató  
+- Support / Helpdesk link  
+
+---
+
+### Belső csapatnak
+
+- HR dokumentáció  
+- Belső tudásbázis  
+- Időnyilvántartó rendszer  
+
+---
+
+## Jó gyakorlatok (Best Practice)
+
+:::warning Fontos megjegyzések
+- A link címe legyen **egyértelmű és rövid**  
+- Ügyfélnek szánt linkeket mindig **ellenőrizd jogosultság szerint**  
+- Ne adj hozzá **bizalmas belső linket** „Client” láthatósággal  
+- White-label CRM esetén használd aktívan az egyéni linkeket az **ügyfélélmény javítására**
+:::

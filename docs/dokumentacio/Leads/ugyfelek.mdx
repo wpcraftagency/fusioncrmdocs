@@ -1,0 +1,138 @@
+---
+title: Ügyletek
+description: Ügyletek (Deals)
+keywords:
+  - hellopack
+sidebar_label: Ügyletek
+sidebar_position: 3
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-handshake text-primary" /> Ügyletek (Deals)
+
+## Modul célja és üzleti szerepe
+
+Az **Ügyletek modul** a FusionCRM-ben az **aktív értékesítési lehetőségek** kezelésére szolgál.  
+Minden ügylet egy konkrét **bevételi potenciált** képvisel, amely:
+
+- leadhez kapcsolódik,  
+- egy értékesítési csatornában (pipeline) halad,  
+- státuszok mentén követhető egészen lezárásig.  
+
+Ez a modul a **sales forecasting**, **pipeline menedzsment** és a **bevétel-tervezés** alapja.
+
+---
+
+## Ügyletek lista nézet
+
+### Elérés
+
+**Bal oldali menü:**  
+**Leads → Ügyletek**
+
+---
+
+### Lista nézet tartalma
+
+A lista az alábbi fő oszlopokat jeleníti meg:
+
+- Ügylet neve  
+- Kapcsolatfelvétel neve (lead)  
+- Kapcsolattartási adatok  
+- Ügylet értéke  
+- Zárási dátum  
+- Következő lépés  
+- Ügylet ügynök  
+- Ajánlatfigyelő  
+- Szakasz (pipeline státusz)  
+- Műveletek  
+
+Ha még nincs rögzített ügylet, a rendszer  
+**„Nincs rendelkezésre álló adat”** üzenetet jelenít meg.
+
+---
+
+## Szűrés és keresés az Ügyletek között
+
+A lista felett elérhető szűrők:
+
+- Időtartam (Kezdő – Záró dátum)  
+- Értékesítési csatorna (pl. Sales Pipeline)  
+- Kategória  
+- Termék  
+- Szöveges keresés  
+
+Ezek lehetővé teszik:
+
+- pipeline szintű áttekintést,  
+- kampányonkénti elemzést,  
+- sales ügynökök teljesítményének vizsgálatát.
+
+---
+
+## Új ügylet létrehozása
+
+### Manuális ügylet hozzáadása
+
+Kattints az **„Ügylet hozzáadása”** gombra.
+
+Megnyílik az **Ügylet információ hozzáadása** űrlap.
+
+---
+
+## Ügylet részletei – mezők magyarázata
+
+### Kötelező mezők
+
+- **Kapcsolatfelvételek**  
+  Az ügylethez tartozó lead kiválasztása.  
+
+- **Ügylet neve**  
+
+- **Értékesítési csatorna**  
+  Meghatározza, mely pipeline-ban mozog az ügylet.  
+
+- **Ügylet szakasz**  
+  Aktuális értékesítési állapot (pl. Generated).  
+
+- **Ügylet értéke**  
+
+- **Zárási dátum**  
+
+---
+
+### Opcionális, de ajánlott mezők
+
+- **Ügylet kategória**  
+  (szolgáltatás típus, kampány, csomag)  
+
+- **Ügylet ügynök**  
+  (felelős sales munkatárs)  
+
+- **Termékek**  
+  (konkrét szolgáltatás vagy termék)  
+
+- **Ajánlatfigyelő**  
+  (aki a proposal / ajánlat státuszát követi)  
+
+:::tip
+Minél pontosabban töltöd ki az opcionális mezőket, annál **pontosabb riportok és előrejelzések** készíthetők.
+:::
+
+---
+
+## Ügylet mentési opciók
+
+Az űrlap alján elérhető műveletek:
+
+- **Mentés** – ügylet létrehozása  
+- **Mentés és hozzáadás** – mentés után új ügylet rögzítése  
+- **Mégsem** – megszakítás  
+
+:::warning Fontos megjegyzések
+Az ügyletek státuszai közvetlenül hatással vannak a pipeline riportokra és a bevételi előrejelzésekre, ezért a szakaszokat mindig naprakészen tartsd.
+:::

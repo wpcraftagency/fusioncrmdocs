@@ -1,0 +1,106 @@
+---
+title: Szabadság beállítások
+description: Szabadság beállítások
+keywords:
+  - hellopack
+sidebar_label: Szabadság beállítások
+sidebar_position: 14
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-calendar-days text-primary" /> Szabadság beállítások
+
+A Szabadság beállítások menüpontban a rendszerben használható szabadságtípusok, azok kiosztási logikája, jóváhagyási folyamata és archiválása kezelhető.  
+Ezek a beállítások közvetlenül hatással vannak a HR-folyamatokra és a munkavállalók szabadságkérelmeire.
+
+---
+
+## Szabadság típus beállítások
+
+### Útvonal
+
+**Beállítások → Szabadság beállítások → Szabadság típus beállítások**
+
+Itt hozhatók létre és kezelhetők az egyes szabadságtípusok  
+(pl. Szabadság, Betegség, Earned).
+
+---
+
+### A lista oszlopai
+
+- **Szabadságtípus** – a szabadság megnevezése  
+- **Szabadság kiosztási típus** – havi vagy éves alapú kiosztás  
+- **Szabadságok száma** – az adott időszakra járó napok száma  
+- **Havi limit** – opcionális korlátozás  
+- **Szabadság fizetési státusz** – fizetett vagy nem fizetett  
+- **Művelet** – szerkesztés, törlés  
+
+---
+
+## Új szabadságtípus hozzáadása
+
+A **„+ Új szabadságtípus hozzáadása”** gombra kattintva megjelenő ablak három fülre tagolódik.
+
+---
+
+### Általános
+
+- **Szabadságtípus** – a szabadság neve  
+- **Szabadság kiosztási típus** – havi vagy éves  
+- **Havi szabadságok száma** – havi kiosztás esetén  
+- **Szabadság fizetési státusz** – fizetett / nem fizetett  
+- **Színkód** – vizuális megkülönböztetés a rendszerben  
+
+---
+
+### Jogosultság
+
+Itt határozható meg, hogy:
+
+- mely felhasználók,  
+- mely osztályok,  
+- milyen feltételekkel  
+
+jogosultak az adott szabadságtípus igénybevételére.
+
+---
+
+### Alkalmazhatóság
+
+Beállítható, hogy:
+
+- mely munkavállalói csoportokra érvényes,  
+- vannak-e kizárások vagy speciális szabályok.
+
+---
+
+## Általános szabadság beállítások
+
+### Fül: Általános szabadság beállítások
+
+Ez a rész a szabadságok számításának és jóváhagyásának globális szabályait határozza meg.
+
+Beállítható:
+
+- **A szabadságok számításának alapja**
+  - csatlakozás dátumától számítva  
+  - az év elejétől számítva  
+- **Az év kezdete** (pl. január)  
+- **Jóváhagyási folyamat**
+  - közvetlen jóváhagyás  
+  - előzetes jóváhagyás (admin / HR további jóváhagyással)  
+
+Ez határozza meg, hogy egy szabadságkérelem milyen jóváhagyási lépcsőkön megy végig.
+
+---
+
+## Archivált szabadság típusok
+
+### Fül: Archivált szabadság típusok
+
+Ebben a nézetben a már nem használt, archivált szabadságtípusok jelennek meg.  
+Az archiválás nem törli az adatokat, csak megakadályozza az új igényléseket az adott típusra.

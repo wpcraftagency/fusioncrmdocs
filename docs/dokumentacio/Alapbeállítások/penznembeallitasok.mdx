@@ -1,0 +1,160 @@
+---
+title: Pénznem beállítások
+description: Pénznem beállítások
+keywords:
+  - hellopack
+sidebar_label: Pénznem beállítások
+sidebar_position: 7
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-file-invoice-dollar text-primary" /> Pénznem beállítások
+
+A **Pénznem beállítások** menüpontban kezelhetők a FusionCRM rendszerben használt valuták, azok árfolyamai és megjelenítési formátuma.  
+Ezek a beállítások **közvetlen hatással vannak minden pénzügyi modulra** (számlák, költségek, rendelések, riportok).
+
+---
+
+## Elérési út
+
+**Beállítások → Pénznem beállítások**
+
+---
+
+## Áttekintés
+
+A képernyőn a rendszerben rögzített pénznemek listája jelenik meg az alábbi adatokkal:
+
+- **Valuta neve**  
+- **Valuta szimbóluma**  
+- **Valuta kódja (ISO)**  
+- **Árfolyam**  
+- **Pénznem formátum**  
+- **Alapértelmezett státusz**  
+
+:::note
+ℹ️ Az árfolyamokat a rendszer mindig az **alapértelmezett pénznemhez viszonyítva** számolja.
+:::
+
+---
+
+## Új valuta hozzáadása
+
+Új pénznem rögzítéséhez kattints az **Új valuta hozzáadása** gombra.
+
+Ez megnyitja az **Új valuta hozzáadása** ablakot.
+
+---
+
+## Alapadatok
+
+### Valuta neve
+
+A pénznem megnevezése (pl. **Forint**, **Euro**).  
+**Kötelező mező.**
+
+---
+
+### Valuta szimbóluma
+
+A pénznem rövid jelölése (pl. **Ft**, **€**).  
+**Kötelező mező.**
+
+---
+
+### Valuta kódja
+
+A pénznem hivatalos **ISO kódja** (pl. **HUF**, **EUR**).  
+**Kötelező mező.**
+
+---
+
+### Kriptovaluta
+
+Megadható, hogy az adott valuta **kriptovaluta-e**.  
+**Igen / Nem** opció választható.
+
+---
+
+### Árfolyam
+
+A pénznem árfolyama az **alapértelmezett pénznemhez viszonyítva**.  
+
+Példa: ha az alapértelmezett pénznem **HUF**, akkor **EUR** esetén az árfolyam az aktuális **HUF/EUR** érték.  
+
+A **Legfrissebb árfolyam lekérése** gombbal automatikusan frissíthető.  
+**Kötelező mező.**
+
+:::tip
+Több pénznem használata esetén érdemes rendszeresen frissíteni az árfolyamokat a pontos pénzügyi kimutatások érdekében.
+:::
+
+---
+
+## Pénznem formátum beállítása
+
+Ebben a szekcióban határozható meg, hogyan jelenjenek meg az összegek az adott pénznemben.
+
+### Valuta pozíciója
+
+Meghatározza, hogy a szimbólum az összeg **előtt vagy után** jelenjen meg.  
+
+Példa: **1 000 Ft** vagy **€1,000**.
+
+---
+
+### Ezres elválasztó
+
+Az ezres csoportosításhoz használt karakter.  
+
+Példa: **.** vagy **,**.
+
+---
+
+### Tizedes elválasztó
+
+A tizedesjegyek elválasztására használt karakter.  
+
+Példa: **.** vagy **,**.
+
+---
+
+### Tizedesjegyek száma
+
+Meghatározza, hány tizedesjegy jelenjen meg.  
+
+Példa: **0** (Forint), **2** (Euro).  
+
+A rendszer automatikusan megjelenít egy **példa formátumot**, amely segít az ellenőrzésben.
+
+---
+
+## Szerkesztés és törlés
+
+Meglévő pénznem módosításához kattints a **Szerkesztés** gombra.  
+
+- Nem alapértelmezett pénznemek **törölhetők**.  
+- Az **alapértelmezett pénznem nem törölhető**.
+
+---
+
+## Mentés
+
+A beállítások megadása után kattints a **Mentés** gombra.
+
+:::tip
+✔️ A változtatások azonnal érvénybe lépnek a rendszerben.
+:::
+
+---
+
+:::warning Fontos megjegyzések
+Az alapértelmezett pénznem módosítása **hatással van az összes meglévő pénzügyi adatra**.  
+Árfolyamváltozás esetén a **korábbi tranzakciók nem módosulnak visszamenőleg**.  
+Több pénznem használata esetén **javasolt az árfolyamok rendszeres frissítése**.
+:::
+```

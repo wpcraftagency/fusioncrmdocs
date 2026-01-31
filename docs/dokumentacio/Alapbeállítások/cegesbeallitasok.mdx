@@ -1,0 +1,95 @@
+---
+title: Céges Beállítások
+description: Céges Beállítások
+keywords:
+  - hellopack
+sidebar_label: Céges Beállítások
+sidebar_position: 2
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-building text-primary" /> Céges beállítások
+
+A **Céges beállítások** menüpontban adhatók meg azok az alapadatok, amelyek a FusionCRM rendszerben a vállalatot azonosítják.  
+Ezek az információk több rendszerfunkcióban is felhasználásra kerülnek, például:
+- e-mail értesítések
+- számlázás
+- automatizmusok
+- felhasználói kommunikáció
+
+---
+
+## Elérési út
+
+**Beállítások → Céges beállítások**
+
+---
+
+## Kitölthető mezők
+
+### Cég neve
+
+A vállalat hivatalos megnevezése.
+
+- Megjelenik rendszerüzenetekben és kimutatásokban
+- **Kötelező mező**
+
+---
+
+### Cég e-mail címe
+
+A cég elsődleges kapcsolattartási e-mail címe.
+
+- Automatikus e-mailek alapértelmezett feladójaként használható
+- **Kötelező mező**
+
+---
+
+### Cég telefonszáma
+
+A vállalat hivatalos telefonszáma **nemzetközi formátumban**.
+
+- Magyar telefonszám esetén ajánlott a `+36` előhívó használata
+- **Kötelező mező**
+
+---
+
+### Cég weboldala
+
+A vállalat hivatalos weboldalának URL címe.
+
+- Teljes hivatkozás szükséges (pl. `https://example.com`)
+- Nem kötelező mező
+
+---
+
+## Mentés
+
+A mezők kitöltése vagy módosítása után kattints a **Mentés** gombra.
+
+:::tip Sikeres mentés
+Sikeres mentés után az adatok **azonnal érvénybe lépnek** a rendszerben.
+:::
+
+---
+
+## Fontos megjegyzések
+
+:::warning Figyelem
+A céges adatok módosítása hatással lehet:
+- e-mail sablonokra
+- pénzügyi dokumentumokra
+- külső integrációkra
+:::
+
+:::note Jogosultság
+A beállítások módosítása **csak adminisztrátori jogosultsággal** rendelkező felhasználóknak ajánlott.
+:::
+
+:::warning Hibás adatok
+Hibás vagy hiányos adatok esetén egyes rendszerfunkciók nem működhetnek megfelelően.
+:::

@@ -1,0 +1,148 @@
+---
+title: Szerepkörök és jogosultságok
+description: Szerepkörök és jogosultságok
+keywords:
+  - hellopack
+sidebar_label: Szerepkörök és jogosultságok
+sidebar_position: 15
+---
+
+import MemberCounter from "@site/src/components/MemberCounter";
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+import CodeBlock from "@theme/CodeBlock";
+
+# <FontAwesomeIcon icon="fa-duotone fa-shield-keyhole text-primary" /> Szerepkörök és jogosultságok
+
+A FusionCRM szerepkör rendszere lehetővé teszi, hogy pontosan meghatározd, ki mit láthat és mit csinálhat a rendszerben.  
+Ez különösen fontos, ha több munkatárs, ügyfél vagy partner használja ugyanazt a CRM-et.
+
+---
+
+## Mire jó ez a gyakorlatban?
+
+- Megakadályozza, hogy illetéktelenek érzékeny adatokhoz férjenek hozzá  
+- Letisztultabb felületet biztosít minden felhasználónak  
+- Növeli az adatbiztonságot és az átláthatóságot  
+- Könnyen skálázható, ahogy a céged növekszik  
+
+:::tip
+A jól beállított szerepkörök jelentősen csökkentik a hibák és jogosulatlan módosítások kockázatát.
+:::
+
+---
+
+## Hol találod a szerepköröket?
+
+A szerepkörök kezelése itt érhető el:
+
+**Beállítások → Szerepkörök és jogosultságok**
+
+Ezen az oldalon láthatod:
+
+- az elérhető szerepköröket  
+- az egyes szerepkörökhöz tartozó jogosultságokat  
+- a modulonkénti hozzáférési szinteket  
+
+---
+
+## Alapértelmezett szerepkörök
+
+A FusionCRM három alap szerepkört biztosít:
+
+### App Administrator
+
+- Teljes hozzáférés a rendszerhez  
+- Minden beállítás és adat elérhető  
+- Ez a szerepkör nem módosítható  
+- Ajánlott: tulajdonosoknak, rendszeradminisztrátoroknak  
+
+:::warning
+Ez a szerepkör **teljes jogosultságot biztosít**, ezért kizárólag megbízható, technikailag felkészült felhasználóknak ajánlott.
+:::
+
+---
+
+### Employee
+
+- Belső munkatársak számára  
+- Jogosultságai testreszabhatók  
+- Modulonként állítható, hogy mit láthat és szerkeszthet  
+- Ajánlott: sales, marketing, admin csapat  
+
+:::tip
+Ez a szerepkör ideális kiindulópont új belső munkatársak számára.
+:::
+
+---
+
+### Client
+
+- Külső felhasználók / ügyfelek számára  
+- Korlátozott hozzáférés  
+- Csak azokat az adatokat látja, amelyek számára relevánsak  
+- Ajánlott: ügyfelek, partnerek, alvállalkozók  
+
+:::warning
+Ügyfelek számára **soha ne használj belső (Employee) szerepkört**, mert az adatvédelmi kockázatot jelenthet.
+:::
+
+---
+
+## Jogosultságok kezelése
+
+Egy szerepkör jogosultságai **modulonként** állíthatók.
+
+### Modulonként elérhető jogosultságok
+
+- **Hozzáadás** – új adatok létrehozása  
+- **Megtekintés** – adatok megtekintése  
+- **Frissítés** – adatok módosítása  
+- **Törlés** – adatok törlése  
+
+Minden modulnál külön beállítható, hogy:
+
+- nincs hozzáférés  
+- csak a saját adatait látja  
+- minden adatot lát  
+
+---
+
+## Szerepkör létrehozása vagy módosítása
+
+Új szerepkör létrehozásához kattints a **„Szerepkör kezelése”** gombra.
+
+Itt lehetőséged van:
+
+- új szerepkör nevének megadására (pl. HR, Projektmenedzser)  
+- meglévő szerepkör jogosultságainak átmásolására  
+- jogosultságok egyedi testreszabására  
+
+:::tip
+Meglévő szerepkör másolása gyorsabb és biztonságosabb, mint teljesen új jogosultságstruktúrát felépíteni.
+:::
+
+---
+
+## Üzleti példa
+
+Egy **sales munkatárs**:
+
+- láthatja és szerkesztheti a leadeket  
+- nem fér hozzá a pénzügyi adatokhoz  
+
+Egy **ügyfél**:
+
+- csak a saját projektjeit látja  
+- nem lát más ügyfelek adatait  
+
+---
+
+## Jó gyakorlatok
+
+:::warning Fontos megjegyzések
+- Adminisztrátori jogot csak indokolt esetben adj  
+- Ügyfeleknek mindig külön szerepkört használj  
+- Időről időre ellenőrizd a jogosultságokat  
+- Új munkatárs belépésekor mindig szerepkör alapján add meg a hozzáférést  
+:::
