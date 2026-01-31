@@ -1,4 +1,4 @@
-# HelloWP Hub
+# FusionCRM Tudásbázis
 
 A [FusionCRM](https://fusioncrm.hu/) hivatalos dokumentációs portálja és tudásbázisa.
 
