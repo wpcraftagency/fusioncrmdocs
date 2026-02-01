@@ -1,0 +1,170 @@
+---
+title: Árajánlatok
+description: Árajánlatok létrehozása, kezelése és sablonból történő készítése a FusionCRM Pénzügy moduljában
+keywords:
+  - fusioncrm
+  - árajánlat
+  - quotation
+  - pénzügy
+  - ajánlat
+sidebar_label: Árajánlat
+sidebar_position: 3
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-file-invoice-dollar text-primary" /> Árajánlatok
+
+Az **Árajánlat** modul a FusionCRM **Pénzügy** részén belül található,  
+és **potenciális ügyfelek számára készített pénzügyi ajánlatok kezelésére** szolgál.
+
+Az árajánlatok alkalmasak előzetes megállapodásokra, amelyek később **megrendeléssé vagy szerződéssé** alakíthatók.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Pénzügy → Árajánlatok**
+
+---
+
+## Árajánlat lista nézet
+
+A lista nézet az összes létrehozott árajánlatot megjeleníti.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/arajanlat_lista.png" alt="Árajánlat lista nézet"></img>
+</BrowserWindow>
+
+Megjelenő oszlopok:
+
+- **Árajánlat száma**
+- **Projekt**
+- **Ügyfél**
+- **Összesen**
+- **Érvényes eddig**
+- **Létrehozva**
+- **Állapot**
+- **Műveletek**
+
+Elérhető műveletek:
+
+- **Árajánlat készítése**
+- **Árajánlat sablon használata**
+- Exportálás
+- Megtekintés
+- Szerkesztés
+- Törlés
+
+---
+
+## Árajánlat készítése
+
+Az **Árajánlat készítése** gombra kattintva megnyílik az árajánlat adatlapja.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/arajanlat_letrehozas.png" alt="Árajánlat készítése"></img>
+</BrowserWindow>
+
+---
+
+## Árajánlat részletei
+
+**Kötelező mezők:**
+
+- **Árajánlat száma**
+- **Ügyfél**
+- **Érvényes eddig**
+- **Pénznem**
+
+**Opcionális mezők:**
+
+- Projekt
+- Leírás
+- Adó számításának módja
+
+---
+
+## Tételek hozzáadása
+
+Az árajánlat több tételből állhat.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/arajanlat_tetelek.png" alt="Árajánlat tételek"></img>
+</BrowserWindow>
+
+Tétel mezők:
+
+- **Tétel neve**
+- Mennyiség
+- Egységár
+- Adó
+- Feltöltött fájl (opcionális)
+- Részletes leírás
+
+Lehetőségek:
+
+- Új tétel hozzáadása
+- Kedvezmény megadása (összeg vagy százalék)
+- Automatikus összeg- és adószámítás
+
+---
+
+## Megjegyzések és feltételek
+
+Az árajánlathoz rögzíthető:
+
+- **Megjegyzés a címzettnek**
+- **Feltételek és szabályok**
+
+Ezek az adatok megjelennek az árajánlat dokumentumban.
+
+---
+
+## Árajánlat sablonok használata
+
+Az **Árajánlat sablon** funkcióval előre elkészített ajánlatmintákból lehet dolgozni.
+
+Sablonból történő létrehozás menete:
+
+1. Lépj az **Árajánlat sablon** menüpontra
+2. Válaszd ki a kívánt sablont
+3. Kattints a **Létrehozás Árajánlat** műveletre
+4. Az árajánlat automatikusan betölti a sablon adatait
+5. Szükség esetén módosítsd, majd mentsd
+
+:::tip Tipp
+Az árajánlat sablonok használata jelentősen csökkenti az adminisztrációs időt  
+és egységes megjelenést biztosít az ajánlatoknál.
+:::
+
+---
+
+## Állapotok kezelése
+
+Az árajánlat állapota nyomon követhető:
+
+- Tervezet
+- Kiküldve
+- Elfogadva
+- Elutasítva
+- Lejárt
+
+Ez segíti az értékesítési folyamat átláthatóságát.
+
+---
+
+:::warning Figyelem
+Az **Árajánlat** modul **potenciális ügyfeleknek** szól.  
+Meglévő ügyfelek esetén használd az **Ajánlatok** funkciót!
+:::
+
+---
+
+:::note Pénzügyi pontosság
+Ments el minden módosítást, mielőtt az árajánlatot kiküldöd,  
+mivel az összegek és adók automatikusan újraszámolásra kerülnek.
+:::

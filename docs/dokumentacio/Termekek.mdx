@@ -1,0 +1,91 @@
+---
+title: Termékek
+description: Termékek és szolgáltatások kezelése a FusionCRM rendszerében
+keywords:
+  - fusioncrm
+  - termékek
+  - szolgáltatás
+  - pricing
+  - catalog
+sidebar_label: Termékek
+sidebar_position: 2
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-boxes-stacked text-primary" /> Termékek
+
+A **Termékek** modul a FusionCRM rendszerében a **szolgáltatások és értékesíthető termékek központi nyilvántartására** szolgál.  
+Innen érhetők el azok az elemek, amelyek **ajánlatokhoz, árajánlatokhoz és számlákhoz** kapcsolhatók.
+
+---
+
+## Termékek lista
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/termekek_lista.png" alt="Termékek lista nézet"></img>
+</BrowserWindow>
+
+A lista nézetben megjelenik minden rögzített termék és szolgáltatás.
+
+**Elérhető műveletek:**
+- **+ Termékek hozzáadása**
+- **Importálás**
+- **Exportálás**
+- Szűrés termékkategória, altípus és egységtípus alapján
+
+:::tip Tipp
+Szolgáltatások esetén az ár lehet **0 Ft**, ha egyedi árazás ajánlatkészítéskor történik.
+:::
+
+---
+
+## Termék hozzáadása
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/termek_hozzaadasa.png" alt="Termék hozzáadása"></img>
+</BrowserWindow>
+
+Új termék vagy szolgáltatás rögzítésekor az alábbi mezők érhetők el:
+
+### Alapadatok
+- **Név*** – a termék vagy szolgáltatás megnevezése  
+- **Ár*** – alapértelmezett egységár  
+- **Pénznem** – automatikusan a rendszer alapértelmezett pénzneme  
+- **Egységtípus** – pl. db (Pcs), óra, csomag  
+
+### Kategorizálás
+- **Termékkategória**  
+- **Termék alkategória**  
+- **HSN/SAC** – adózási besoroláshoz
+
+### Adózás
+- **Adó** – választható adókulcs vagy adómentesség  
+
+### Egyéb beállítások
+- **SKU** – belső azonosító  
+- **Az ügyfél vásárolhat** – publikálható termék  
+- **Letölthető** – digitális termék esetén  
+
+### Leírás és fájl
+- **Leírás** – részletes termékinformáció  
+- **Fájl hozzáadása** – dokumentum vagy digitális tartalom feltöltése
+
+:::warning Fontos
+A termék **alapára automatikusan betöltődik** ajánlat és számla készítésekor, de ott **felülírható**.
+:::
+
+---
+
+## Termékek felhasználása
+
+A rögzített termékek az alábbi modulokban használhatók:
+- **Ajánlat**
+- **Árajánlat**
+- **Számlák**
+- **Ismétlődő számlák**
+
+:::tip Tipp
+Egységes termékkatalógus használatával elkerülhetők az eltérő megnevezések és árazási hibák.
+:::

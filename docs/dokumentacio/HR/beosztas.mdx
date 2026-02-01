@@ -1,0 +1,126 @@
+---
+title: Beosztás
+description: Beosztások létrehozása és kezelése a FusionCRM HR moduljában
+keywords:
+  - fusioncrm
+  - beosztás
+  - designation
+  - hr
+  - munkakör
+sidebar_label: Beosztás
+sidebar_position: 7
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-id-badge text-primary" /> Beosztás
+
+A **Beosztás** modul a FusionCRM HR rendszerében a **munkakörök és pozíciók strukturált kezelésére** szolgál.  
+Ez képezi az alapját a **munkavállalói hierarchiának**, jogosultságoknak és riportálásnak.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**HR → Beosztás**
+
+---
+
+## Beosztások lista nézet
+
+A lista nézet táblázatos formában jeleníti meg a rendszerben rögzített beosztásokat.
+
+Megjelenő oszlopok:
+
+- **Név**
+- **Szülő beosztás**
+- **Műveletek**
+
+Amennyiben még nincs rögzített beosztás, a rendszer a  
+**„Nincs rendelkezésre álló adat”** üzenetet jeleníti meg.
+
+Elérhető műveletek:
+
+- **Beosztás hozzáadása**
+- **Exportálás**
+- Keresés és szűrés
+
+---
+
+## Beosztás hozzáadása
+
+A **Beosztás hozzáadása** gombra kattintva megnyílik az új beosztás rögzítésére szolgáló űrlap.
+
+### Kötelező mezők
+
+- **Név**  
+  A beosztás megnevezése  
+  *(pl. Csapatvezető, Senior Developer, HR Manager)*
+
+### Opcionális mezők
+
+- **Szülő beosztás**  
+  Lehetővé teszi **hierarchikus struktúra** kialakítását  
+  *(pl. Junior Developer → Senior Developer → Team Lead)*
+
+---
+
+## Hierarchikus beosztások kezelése
+
+A szülő–gyermek kapcsolat segítségével:
+
+- átlátható szervezeti struktúra alakítható ki
+- pontosabb riportok készíthetők
+- jogosultságok könnyebben skálázhatók
+
+:::warning Figyelem
+A hibás vagy túl mély hierarchia **átláthatatlanná teheti** a HR riportokat és jogosultsági logikát.
+:::
+
+---
+
+## Mentés
+
+Az adatok rögzítése után kattints a **Mentés** gombra.
+
+✔️ A beosztás azonnal megjelenik a listában  
+✔️ Az új beosztás hozzárendelhető munkavállalókhoz  
+✔️ Azonnal elérhető a HR modul más részeiben
+
+---
+
+## Exportálás
+
+A **Exportálás** funkcióval:
+
+- teljes beosztáslista letölthető
+- használható HR auditokhoz
+- alkalmas szervezeti struktúra dokumentálására
+
+---
+
+## Jó gyakorlatok
+
+:::tip Tipp
+- Használj **egyértelmű és következetes elnevezéseket**
+- Kerüld a duplikált beosztásokat
+- Építs **logikus hierarchiát**
+- Időről időre vizsgáld felül a már nem használt pozíciókat
+:::
+
+---
+
+## Adatbiztonság és HR megfelelés
+
+A beosztások **közvetetten hatással vannak**:
+
+- jogosultságokra
+- hozzáférésekre
+- riportálásra
+
+:::note Megjegyzés
+A beosztásadatok **HR rendszerlogikát befolyásoló metaadatok**, ezért módosításukat csak jogosult felhasználóknak engedélyezd.
+:::

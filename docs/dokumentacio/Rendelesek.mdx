@@ -1,0 +1,112 @@
+---
+title: Rendelések
+description: Rendelések létrehozása, kezelése és nyomon követése a FusionCRM rendszerben
+keywords:
+  - fusioncrm
+  - rendelések
+  - order
+  - értékesítés
+  - termék
+sidebar_label: Rendelések
+sidebar_position: 3
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-cart-shopping text-primary" /> Rendelések
+
+A **Rendelések** modul a FusionCRM egyik központi eleme,  
+amely az **ügyfelek által leadott megrendelések rögzítésére, kezelésére és pénzügyi összesítésére** szolgál.
+
+---
+
+## Rendelések lista
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/rendelesek_lista.png" alt="Rendelések lista nézet"></img>
+</BrowserWindow>
+
+A lista nézetben az összes létrehozott rendelés áttekinthető.
+
+**Megjelenített adatok:**
+- Rendelés száma  
+- Ügyfél  
+- Összesen  
+- Rendelés dátuma  
+- Állapot  
+
+**Elérhető műveletek:**
+- **+ Új rendelés hozzáadása**
+- **Exportálás**
+- Szűrés időtartam és ügyfél szerint
+
+:::tip Tipp
+Nagyobb forgalom esetén érdemes az **időtartam szűrőt** használni a gyorsabb kereséshez.
+:::
+
+---
+
+## Új rendelés létrehozása
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/rendeles_letrehozasa.png" alt="Rendelés létrehozása"></img>
+</BrowserWindow>
+
+Új rendelés felvitelekor az alábbi fő adatok megadása szükséges.
+
+### Alapadatok
+
+- **Rendelési szám*** – automatikusan generált vagy kézzel megadott  
+- **Ügyfél*** – a megrendelést leadó ügyfél  
+- **Számlázási cím** – az ügyfélhez rendelve  
+- **Szállítási cím** – opcionális  
+- **Projekt** – opcionális  
+- **Állapot*** – pl. Függőben, Feldolgozás alatt  
+
+:::warning Kötelező mezők
+A rendelés **nem menthető**, amíg nincs kiválasztva ügyfél és nincs hozzáadva legalább egy tétel.
+:::
+
+---
+
+## Termékek hozzáadása a rendeléshez
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/rendeles_letrehozasa.png" alt="Termék hozzáadása rendeléshez"></img>
+</BrowserWindow>
+
+A rendeléshez egy vagy több termék adható hozzá.
+
+**Funkciók:**
+- Termék kiválasztása a listából  
+- Mennyiség megadása  
+- Kedvezmény (%) alkalmazása  
+- Automatikus adó- és végösszeg számítás  
+
+:::tip Tipp
+A kedvezmény mező használatával **egyedi árazás** is könnyen kezelhető ügyfelenként.
+:::
+
+---
+
+## Összesítés és megjegyzés
+
+A rendelés alján automatikusan megjelenik:
+- **Részösszeg**
+- **Kedvezmény**
+- **Adó**
+- **Végösszeg**
+
+Lehetőség van **ügyfél megjegyzés** hozzáadására, amely megjelenhet a későbbi számlázás során is.
+
+---
+
+## Rendelés mentése
+
+A rendelés véglegesítéséhez kattints a **Küldés** gombra.  
+Sikeres mentés után a rendelés megjelenik a listában, és további pénzügyi műveletek (számlázás, fizetés) kapcsolhatók hozzá.
+
+:::warning Fontos
+A mentett rendelés módosítása hatással lehet a kapcsolódó **számlákra és pénzügyi adatokra**.
+:::

@@ -1,0 +1,154 @@
+---
+title: Szabadságok kezelése
+description: Szabadságok igénylése, jóváhagyása és kezelése a FusionCRM HR moduljában
+keywords:
+  - fusioncrm
+  - szabadság
+  - leave
+  - hr
+  - munkavállalók
+sidebar_label: Szabadságok
+sidebar_position: 3
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-calendar-days text-primary" /> Szabadságok
+
+A **Szabadságok** modul a FusionCRM HR rendszerének része, amely lehetővé teszi a munkavállalók  
+**szabadságigénylésének, nyilvántartásának és jóváhagyásának** strukturált kezelését.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**HR → Szabadságok**
+
+---
+
+## Szabadságok lista nézet
+
+A lista nézet táblázatos formában jeleníti meg a rögzített szabadságokat.
+
+Megjelenő oszlopok:
+
+- **Munkavállaló**
+- **Szabadság dátuma**
+- **Időtartam**
+- **Szabadság státusza**
+- **Szabadság típusa**
+- **Fizetett**
+- **Műveletek**
+
+Elérhető funkciók:
+
+- **Új szabadság hozzáadása**
+- **Exportálás**
+- Keresés és szűrés időtartam alapján
+
+Amennyiben nincs rögzített adat, a rendszer  
+**„Nincs rendelkezésre álló adat”** üzenetet jelenít meg.
+
+---
+
+## Új szabadság hozzáadása
+
+Az **Új Szabadság** gombra kattintva megnyílik a szabadság rögzítésére szolgáló adatlap.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szabadsag_hozzarendeles.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+---
+
+## Szabadság hozzárendelése
+
+### Kötelező mezők
+
+- **Válasszon tagot**  
+  A szabadságot igénylő munkavállaló kiválasztása
+- **Szabadságtípus**  
+  (pl. Szabadság, Betegség, Egyéb – a rendszerbeállításoktól függően)
+- **Dátum**
+- **Hiányzás oka**
+
+---
+
+## Időtartam kiválasztása
+
+A szabadság időtartama többféleképpen adható meg:
+
+- **Teljes nap**
+- **Többszörös nap**
+- **Első fél**
+- **Második fél**
+
+Ez lehetővé teszi a **fél napos vagy többnapos szabadságok** pontos kezelését.
+
+---
+
+## Szabadság állapota
+
+A szabadság státusza az alábbi értékeket veheti fel:
+
+- **Függőben**
+- **Jóváhagyva**
+
+:::warning
+A **Jóváhagyva** státusz kiválasztása azonnal érvényesíti a szabadságot.  
+Nagyobb csapat esetén javasolt jóváhagyási folyamat alkalmazása.
+:::
+
+---
+
+## Hiányzás oka
+
+Szabad szöveges mező, ahol megadható:
+
+- a szabadság indoka
+- betegség esetén rövid leírás
+- belső HR megjegyzés
+
+**Példa:**
+
+> „Nem érzem jól magam”
+
+---
+
+## Fájl hozzáadása
+
+Lehetőség van **dokumentum csatolására**, például:
+
+- orvosi igazolás
+- hivatalos dokumentum
+- HR melléklet
+
+Ez különösen hasznos **betegszabadság** vagy jogilag igazolandó távollét esetén.
+
+---
+
+## Mentés
+
+Az adatok rögzítése után kattints a **Mentés** gombra.
+
+✔️ A szabadság azonnal megjelenik a listában  
+✔️ A státusz alapján a HR és vezetők nyomon követhetik  
+
+---
+:::tip
+## Jó gyakorlatok
+
+- Használj **egyértelmű szabadságtípusokat**
+- Betegség esetén **mindig csatolj dokumentumot**
+- Ne hagyd hosszú ideig **Függőben** állapotban a szabadságokat
+- Rendszeresen exportáld a szabadságlistát HR riportáláshoz
+- Ügyelj a **GDPR és UK GDPR** előírásokra a csatolt dokumentumoknál
+:::
+
+:::warning
+A szabadságadatok **személyes és érzékeny HR információk**.  
+Hozzáférést kizárólag jogosult szerepköröknek adj!
+:::

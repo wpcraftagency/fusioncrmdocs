@@ -1,0 +1,100 @@
+---
+title: Jegyek
+description: Jegyek létrehozása, kezelése és ügyféltámogatás a FusionCRM Jegyek moduljában
+keywords:
+  - fusioncrm
+  - jegyek
+  - ticket
+  - support
+  - ügyfélszolgálat
+sidebar_label: Jegyek
+sidebar_position: 4
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-ticket text-primary" /> Jegyek
+
+A **Jegyek** modul a FusionCRM rendszerében az **ügyféltámogatási és belső kérések kezelésére** szolgál.  
+Segítségével strukturált módon kezelhetők az ügyfélhibák, kérések, belső feladatok és visszajelzések.
+
+---
+
+## Jegyek lista
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/jegyek_lista.png" alt="Jegyek lista nézet"></img>
+</BrowserWindow>
+
+A lista nézetben megtekinthetők az összes beérkezett és létrehozott jegyek.
+
+**Elérhető funkciók:**
+- **+ Jegy létrehozása**
+- **Jegy űrlap**
+- Állapot szerinti szűrés (Nyitott, Függőben, Lezárt, Megoldott)
+- Időtartam szerinti szűrés
+- Exportálás
+
+:::tip Tipp
+A felső statisztikai kártyák segítségével gyors áttekintést kapsz az aktuális jegyállapotokról.
+:::
+
+---
+
+## Jegy létrehozása
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/jegy_letrehozasa.png" alt="Jegy létrehozása"></img>
+</BrowserWindow>
+
+Új jegy rögzítésekor az alábbi adatok adhatók meg:
+
+### Jegy részletei
+
+- **Kérő típusa*** – Ügyfél vagy Munkavállaló  
+- **Kérő neve***  
+- **Kapcsolat neve**  
+- **Csoport hozzárendelése***  
+- **Ügynök**  
+- **Projekt**  
+- **Típus** – pl. Bug, Kérés, Információ  
+- **Jegytárgy***  
+- **Leírás*** – részletes probléma vagy kérés  
+- **Fájl feltöltése** – csatolmányok, képernyőképek  
+
+:::warning Fontos
+A *Jegytárgy* és *Leírás* mezők kötelezőek, ezek nélkül a jegy nem menthető.
+:::
+
+---
+
+## Jegy űrlap (külső űrlap)
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/jegy_urlap.png" alt="Jegy űrlap előnézet"></img>
+</BrowserWindow>
+
+A **Jegy űrlap** lehetővé teszi, hogy a jegyek **külső weboldalról** is beérkezzenek.
+
+**Fő jellemzők:**
+- Mezők sorrendjének és láthatóságának beállítása
+- Előnézet valós időben
+- Beágyazható iframe kód
+- Közvetlen megosztható link
+
+:::tip Tipp
+Az űrlap szélessége és magassága iframe esetén px-ben szabadon állítható, így könnyen illeszthető bármely weboldalba.
+:::
+
+---
+
+## Jegyek életciklusa
+
+A jegyek az alábbi állapotokon haladhatnak végig:
+- **Nyitott**
+- **Függőben**
+- **Lezárt**
+- **Megoldott**
+
+Ez segíti az átlátható ügyfélkommunikációt és a belső munkafolyamatok követését.

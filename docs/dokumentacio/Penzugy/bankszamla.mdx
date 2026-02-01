@@ -1,0 +1,102 @@
+---
+title: Bankszámla
+description: Bankszámlák kezelése és nyomon követése a FusionCRM Pénzügy moduljában
+keywords:
+  - fusioncrm
+  - pénzügy
+  - bankszámla
+  - bank account
+  - cash
+sidebar_label: Bankszámla
+sidebar_position: 8
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-building-columns text-primary" /> Bankszámla
+
+A **Bankszámla** modul a FusionCRM **Pénzügy** részén belül érhető el,  
+és a **banki valamint készpénzes számlák rögzítésére, kezelésére és pénzügyi műveletekhez való hozzárendelésére** szolgál.
+
+---
+
+## Bankszámla lista
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/bankszamla_lista.png" alt="Bankszámla lista nézet"></img>
+</BrowserWindow>
+
+A lista nézetben áttekinthetők az összes rögzített bankszámla és készpénzes számla adatai.
+
+**Elérhető műveletek:**
+- **+ Bankfiók hozzáadása**
+- **Exportálás**
+- Szűrés típus és státusz szerint
+
+Megjelenített főbb adatok:
+- Bankszámla
+- Sort Code
+- Számlatulajdonos neve
+- Számlatípus
+- Pénznem
+- Banki egyenleg
+- Állapot
+
+---
+
+## Bankszámla hozzáadása
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/bankszamla_hozzaadas.png" alt="Bankszámla hozzáadása"></img>
+</BrowserWindow>
+
+Új bankszámla vagy készpénzes számla rögzítésekor az alábbi mezők érhetők el.
+
+### Alapadatok
+
+- **Típus*** – Bank vagy Készpénz  
+- **Sort Code** – banki azonosító (UK bankszámlák esetén kiemelten fontos)  
+- **Bank neve***  
+- **Számlatulajdonos neve***  
+- **Számlaszám***  
+- **Számlatípus** – pl. megtakarítás, folyószámla  
+- **Pénznem***  
+- **Kapcsolattartó telefonszáma***  
+- **Nyitó egyenleg***  
+- **Állapot*** – aktív vagy inaktív  
+
+### Bank logó
+
+Lehetőség van a bank logójának feltöltésére a könnyebb azonosíthatóság érdekében.
+
+---
+
+:::warning Fontos
+A bankszámla adatok **érzékeny pénzügyi információk**.  
+Hozzáférést kizárólag megfelelő jogosultsággal rendelkező felhasználóknak adj!
+:::
+
+:::tip Jó gyakorlat
+- UK bankszámlák esetén mindig pontos **Sort Code** és **számlaszám** megadása szükséges  
+- Készpénzes számlát külön rögzíts a banki számláktól  
+- A nyitó egyenleg helyes megadása kulcsfontosságú a pontos pénzügyi riportokhoz  
+:::
+
+---
+
+## Kapcsolódó funkciók
+
+A rögzített bankszámlák felhasználhatók:
+- **Számlákhoz**
+- **Fizetésekhez**
+- **Kiadásokhoz**
+- **Jóváírásokhoz**
+
+Ez biztosítja a teljes pénzügyi folyamatok pontos és átlátható kezelését a FusionCRM rendszerben.
+
+---
+
+:::note Megjegyzés
+A bankszámlák módosítása hatással lehet meglévő pénzügyi tranzakciókra és riportokra.
+:::

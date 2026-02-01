@@ -72,9 +72,9 @@ stylesheets: [
 
       algolia: {
         // The application ID provided by Algolia
-        appId: "PEGF6C8Q8Y",
+        appId: "GOU33A5VT2",
         // Public API key: it is safe to commit it
-        apiKey: "44dbebc8d658be083a2adf5913fa8119",
+        apiKey: "bd1400f4f76c3595b0c6e433cdb90755",
         indexName: "hellolol",
         // Optional: see doc section below
         contextualSearch: false,
@@ -95,7 +95,7 @@ stylesheets: [
             activeBaseRegex: "docs/(next|v8)",
           },
           {
-            href: "https://github.com/wpcraftagency/hub.nestlywp",
+            href: "https://github.com/wpcraftagency/fusioncrmdocs",
             label: "GitHub",
             position: "right",
             className: "header-github-link",

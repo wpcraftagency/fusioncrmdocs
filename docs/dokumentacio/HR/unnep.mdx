@@ -1,0 +1,113 @@
+---
+title: Ünnep
+description: Ünnepnapok kezelése és beállítása a FusionCRM HR moduljában
+keywords:
+  - fusioncrm
+  - ünnep
+  - ünnepnap
+  - hr
+  - munkarend
+sidebar_label: Ünnep
+sidebar_position: 6
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-calendar-star text-primary" /> Ünnep
+
+Az **Ünnep** modul a FusionCRM-ben a **munkaszüneti és ünnepnapok** kezelésére szolgál.  
+Az itt rögzített napok hatással lehetnek a **jelenlét**, **szabadság** és **műszakbeosztás** modulokra.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**HR → Ünnep**
+
+---
+
+## Ünnep lista nézet
+
+Az ünnepek **naptár alapú nézetben** jelennek meg.
+
+Fő funkciók:
+
+- Havi / heti / napi nézet
+- Keresés
+- Navigálás hónapok között
+- Ünnepnapok vizuális megjelenítése a naptárban
+
+Elérhető műveletek:
+
+- **Új ünnep hozzáadása**
+- **Alapértelmezett ünnepnapok megadása**
+
+---
+
+## Ünnep hozzáadása
+
+Kattints az **Új ünnep hozzáadása** gombra.
+
+Megnyílik az **Ünnepnap hozzáadása** űrlap.
+
+### Kötelező mezők
+
+- **Dátum**
+- **Alkalom**  
+  (pl. *Christmas Day*, *New Year’s Day*)
+
+### Opcionális szűkítések
+
+Ezekkel meghatározható, hogy az ünnep **kikre vonatkozzon**:
+
+- **Osztály**
+- **Beosztás**
+- **Foglalkoztatási típus**
+
+Ha nincs szűkítés megadva, az ünnep **minden munkavállalóra érvényes**.
+
+---
+
+## Mentés
+
+Az adatok rögzítése után kattints a **Mentés** gombra.
+
+- Az ünnep azonnal megjelenik a naptárban
+- A rendszer figyelembe veszi a kapcsolódó HR folyamatokban
+
+:::warning Figyelem
+Az ünnepnapok **globális hatásúak** a HR működésben.  
+Hibás dátum vagy rossz hatókör megadása munkaidő- és bérszámfejtési eltérést okozhat.
+:::
+
+---
+
+## Alapértelmezett ünnepnapok
+
+Az **Alapértelmezett ünnepnapok megadása** funkcióval előre feltölthetők:
+
+- országos ünnepnapok
+- rendszeresen ismétlődő munkaszüneti napok
+
+Ez különösen hasznos **UK-alapú cégek** esetén az éves naptár gyors előkészítéséhez.
+
+:::note Megjegyzés
+Ha több országban dolgoztok, érdemes **osztály / beosztás / foglalkoztatási típus** szűkítésekkel kezelni az eltérő ünnepnapokat.
+:::
+
+---
+
+## Jó gyakorlatok
+
+:::tip Tipp
+- Ünnepnapokat lehetőleg **év elején** rögzítsd vagy importáld
+- Használj egyértelmű, hivatalos megnevezéseket (pl. UK: **Bank Holiday** elnevezések)
+- Ellenőrizd az ünnepek hatását a **műszakbeosztásra** és a **jelenlét** riportokra
+- Ne keverd az ünnepnapokat a **szabadságtípusokkal** (más HR logika)
+:::
+
+Az ünnepnapok **központi HR adatok**, amelyek több modul működését is befolyásolják.  
+Kezelésük mindig egységes HR-szabályzat alapján történjen.

@@ -1,0 +1,137 @@
+---
+title: Fizetések
+description: Fizetések rögzítése, kezelése és tömeges feldolgozása a FusionCRM Pénzügy moduljában
+keywords:
+  - fusioncrm
+  - pénzügy
+  - fizetések
+  - payment
+  - számla
+sidebar_label: Fizetések
+sidebar_position: 5
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-credit-card text-primary" /> Fizetések
+
+A **Fizetések** modul a FusionCRM **Pénzügy** részén belül érhető el,  
+és a **számlákhoz kapcsolódó beérkező kifizetések rögzítésére és nyomon követésére** szolgál.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Pénzügy → Fizetések**
+
+---
+
+## Fizetések lista nézet
+
+A lista az összes rögzített fizetést jeleníti meg.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/penzugy_fizetesek_lista.png" alt="Fizetések lista nézet"></img>
+</BrowserWindow>
+
+Megjelenő oszlopok:
+
+- **Kód**
+- **Projekt**
+- **Számla**
+- **Ügyfél**
+- **Rendelés**
+- **Összeg**
+- **Fizetve ekkor**
+- **Fizetési átjáró**
+- **Állapot**
+- **Műveletek**
+
+Elérhető funkciók:
+
+- **Fizetés hozzáadása**
+- **Tömeges fizetés hozzáadása**
+- **Exportálás**
+- Keresés és szűrés időszak, ügyfél és összeg alapján
+
+---
+
+## Fizetés hozzáadása
+
+Egyedi fizetés rögzítéséhez kattints a **Fizetés hozzáadása** gombra.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/penzugy_fizetes_hozzaadas.png" alt="Fizetés hozzáadása"></img>
+</BrowserWindow>
+
+### Fizetési részletek
+
+**Kötelező mezők:**
+
+- **Számla**
+- **Fizetve ekkor (dátum)**
+- **Összeg**
+- **Árfolyam**
+- **Pénznem**
+
+**Opcionális mezők:**
+
+- Projekt
+- Tranzakció azonosító
+- Fizetési átjáró
+- Bankszámla
+- Nyugta csatolása
+- Megjegyzés
+
+:::note Megjegyzés
+A tranzakció azonosító használata **erősen ajánlott** online vagy banki fizetések esetén.
+:::
+
+---
+
+## Tömeges fizetés hozzáadása
+
+Nagyobb mennyiségű fizetés egyidejű rögzítésére szolgál.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/penzugy_tomeges_fizetes.png" alt="Tömeges fizetés hozzáadása"></img>
+</BrowserWindow>
+
+### Elérhető lehetőségek
+
+- Szűrés **ügyfél alapján**
+- Fizetési mód kiválasztása
+- Több számla egyidejű kiegyenlítése
+- Automatikus egyenleg frissítés
+
+:::warning Figyelem
+A tömeges fizetés **visszavonhatatlan művelet**.  
+Mentés előtt mindig ellenőrizd az összegeket és a számlák listáját!
+:::
+
+---
+
+## Mentés
+
+A fizetés(ek) rögzítéséhez kattints a **Mentés** gombra.
+
+✔️ A fizetés azonnal megjelenik a listában  
+✔️ A kapcsolódó számla egyenlege automatikusan frissül  
+✔️ A pénzügyi riportok azonnal naprakészek lesznek  
+
+---
+
+:::tip Jó gyakorlatok
+- Használj tranzakció azonosítót minden banki fizetésnél  
+- Tömeges rögzítés előtt exportáld a számlalistát ellenőrzéshez  
+- Csatolj nyugtát vagy bizonylatot auditálhatóság érdekében  
+- Rendszeresen exportáld a fizetéseket könyveléshez
+:::
+
+:::note Adatvédelem
+A fizetési adatok **üzleti és pénzügyi szempontból érzékeny információk**.  
+Hozzáférést kizárólag megfelelő jogosultságú felhasználóknak biztosíts!
+:::

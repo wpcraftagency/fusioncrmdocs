@@ -1,0 +1,112 @@
+---
+title: Kiadások
+description: Kiadások kezelése és nyomon követése a FusionCRM Pénzügy moduljában
+keywords:
+  - fusioncrm
+  - pénzügy
+  - kiadás
+  - expense
+  - költség
+sidebar_label: Kiadások
+sidebar_position: 7
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-arrow-trend-down text-primary" /> Kiadások
+
+A **Kiadások** modul a FusionCRM **Pénzügy** részén belül érhető el,  
+és a **vállalkozás működéséhez kapcsolódó költségek rögzítésére, kezelésére és ellenőrzésére** szolgál.
+
+---
+
+## Kiadások lista
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/kiadasok_lista.png" alt="Kiadások lista nézet"></img>
+</BrowserWindow>
+
+A lista nézetben áttekinthetők az összes rögzített kiadás adatai.
+
+**Elérhető műveletek:**
+
+- **+ Kiadás hozzáadása**
+- **Ismétlődő kiadások**
+- **Importálás**
+- **Exportálás**
+- Szűrés időtartam, állapot és összeg szerint
+
+:::warning Figyelem
+A kiadások **közvetlen hatással vannak a pénzügyi riportokra és eredménykimutatásokra**.  
+Hibás vagy hiányos rögzítés torzíthatja az üzleti döntéseket.
+:::
+
+---
+
+## Kiadás hozzáadása
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/kiadas-hozzaadasa.png" alt="Kiadás hozzáadása"></img>
+</BrowserWindow>
+
+### Kiadási részletek
+
+Az új kiadás rögzítésekor az alábbi mezők érhetők el:
+
+- **Tétel neve*** – a kiadás megnevezése  
+- **Pénznem*** – a kiadás pénzneme  
+- **Árfolyam*** – automatikusan vagy manuálisan megadva  
+- **Ár*** – a kiadás összege  
+- **Vásárlás dátuma***  
+- **Munkavállaló** – opcionális  
+- **Projekt** – opcionális  
+- **Kiadás kategória**  
+- **Vásárolva innen**  
+- **Bankszámla**  
+- **Számla** – bizonylat vagy melléklet feltöltése  
+
+:::warning GDPR és adatvédelem
+A csatolt **számlák és bizonylatok személyes vagy érzékeny adatokat** tartalmazhatnak.  
+Biztosítsd, hogy csak jogosult szerepkörök férjenek hozzá!
+:::
+
+---
+
+## Ismétlődő kiadások
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ismetlodő_kiadas_hozzaadasa.png" alt="Ismétlődő kiadás hozzáadása"></img>
+</BrowserWindow>
+
+Az **Ismétlődő kiadások** funkció rendszeres költségek (pl. előfizetések, licencek, bérleti díjak)  
+**automatikus generálására** szolgál.
+
+### Beállítható mezők
+
+- **Tétel neve***  
+- **Pénznem***  
+- **Ár***  
+- **Munkavállaló / Projekt / Bankszámla** – opcionális  
+- **Kiadás kategória**  
+- **Vásárolva innen**  
+- **Számlázási gyakoriság*** (napi / heti / havi / éves)  
+- **Kezdő dátum**
+- **Azonnali indítás**
+- **Ismétlések száma*** (`-1` = végtelen)
+- **Számla csatolása**
+
+:::note Fontos
+Az ismétlődő kiadások **automatikusan létrejönnek** a megadott ütemezés szerint,  
+és ugyanúgy megjelennek a kiadáslistában, mint a manuálisan rögzített tételek.
+:::
+
+---
+
+:::tip Jó gyakorlatok
+- Használj **ismétlődő kiadást** minden rendszeres költséghez  
+- Mindig rendelj kiadást **kategóriához** a pontos riportálásért  
+- Projekt alapú működésnél kapcsold a kiadást projekthez  
+- Havi zárás előtt exportáld a kiadáslistát pénzügyi ellenőrzéshez  
+- Ne hagyd a kiadásokat bizonylat nélkül
+:::

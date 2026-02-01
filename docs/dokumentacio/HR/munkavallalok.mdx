@@ -1,0 +1,168 @@
+---
+title: Munkavállalók kezelése
+description: Munkavállalók hozzáadása, meghívása és kezelése a FusionCRM HR moduljában
+keywords:
+  - fusioncrm
+  - munkavállalók
+  - hr
+  - employee
+  - jogosultságok
+sidebar_label: Munkavállalók
+sidebar_position: 2
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-people-group fa-2xl text-success" /> Munkavállalók
+
+A **Munkavállalók** modul a FusionCRM HR rendszerének központi eleme.  
+Itt kezelhetők a belső felhasználók, azok **HR adatai, jogosultságai és rendszerhozzáférései**.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**HR → Munkavállalók**
+
+---
+
+## Munkavállalók lista nézet
+
+A lista táblázatos formában jeleníti meg az alkalmazottakat.
+
+Megjelenő oszlopok:
+
+- **Alkalmazott azonosító**
+- **Név**
+- **E-mail**
+- **Felhasználói szerepkör**
+- **Jelentési kötelezettség**
+- **Állapot**
+- **Műveletek**
+
+Elérhető műveletek:
+
+- **Munkavállaló hozzáadása**
+- **Munkavállaló meghívása**
+- **Importálás**
+- **Exportálás**
+- Keresés és szűrés
+
+---
+
+## Munkavállaló hozzáadása
+
+A **Munkavállaló hozzáadása** gombra kattintva megnyílik az adatlap.
+
+### Fiók adatai
+
+**Kötelező mezők:**
+
+- **Alkalmazott azonosító**
+- **Alkalmazott neve**
+- **Alkalmazott e-mail címe**
+- **Beosztás**
+- **Osztály**
+- **Csatlakozás dátuma**
+- **Felhasználói szerepkör**
+
+**További mezők:**
+
+- Megszólítás  
+- Születési dátum  
+- Ország  
+- Mobil  
+- Nem  
+- Nyelv  
+- Profilkép  
+- Cím  
+- Névjegy  
+
+---
+
+## Egyéb adatok
+
+Ebben a szekcióban a **HR és működési szempontból kritikus adatok** rögzíthetők.
+
+Beállítható:
+
+- **Bejelentkezés engedélyezett?**
+- **Kapjon e-mail értesítéseket?**
+- **Órabér**
+- **Slack tag azonosító**
+- **Készségek**
+- **Próbaidő vége**
+- **Felmondási idő kezdete**
+- **Felmondási idő vége**
+- **Foglalkoztatási típus**
+- **Családi állapot**
+- **Üzleti címek**
+
+:::warning
+A **felhasználói szerepkör** hibás beállítása biztonsági kockázatot jelenthet.  
+Admin jogosultságot csak indokolt esetben adj!
+:::
+
+---
+
+## Munkavállaló meghívása
+
+A **Munkavállaló meghívása** funkcióval az alkalmazott **meghívásos alapon** csatlakozhat a rendszerhez.  
+Ez az ajánlott módszer új belépők onboardingjához.
+
+### Meghívás e-mailben
+
+Beállítás lépései:
+
+- Add meg az e-mail címet
+- Opcionálisan írj egyedi üzenetet
+- Kattints a **Meghívó küldése** gombra
+
+A munkavállaló e-mailben kapja meg:
+
+- a belépési adatokat
+- a profil frissítésére vonatkozó útmutatót
+
+### Meghívás linkkel
+
+Lehetőség van **meghívó link létrehozására**, amelyet manuálisan lehet megosztani.
+
+Opciók:
+
+- **Bármely e-mail cím engedélyezése**
+- **Csak megadott domain engedélyezése** (pl. `@ceged.co.uk`)
+
+:::warning
+Meghívó link használatakor mindig korlátozd a megengedett e-mail domaineket!
+:::
+
+---
+
+## Importálás és exportálás
+
+### Importálás
+
+Az **Importálás** funkcióval tömegesen rögzíthetők munkavállalók.
+
+- Tömeges munkavállaló-felvitel
+- CSV / Excel alapú import
+- Ideális nagyobb csapatok gyors onboardingjához
+
+### Exportálás
+
+- Teljes munkavállalói lista letöltése
+- Riportálás és HR audit célokra
+
+---
+:::tip
+## Jó gyakorlatok
+
+- Mindig **szerepkör alapján** add meg a hozzáférést
+- Új belépőknél használd a **meghívás e-mailben** funkciót
+- HR adatok kezelésekor ügyelj a **GDPR és UK GDPR megfelelésre**
+- Rendszeresen ellenőrizd az **inaktív munkavállalókat**
+- **Órabér és foglalkoztatási típus megadása ajánlott** a pontos riportáláshoz
+:::

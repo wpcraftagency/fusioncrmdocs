@@ -1,0 +1,128 @@
+---
+title: Időnaplók
+description: Munkaidő és feladatokra fordított idő rögzítése a FusionCRM Munka moduljában
+keywords:
+  - fusioncrm
+  - időnapló
+  - munkaidő
+  - timesheet
+  - projekt
+sidebar_label: Időnaplók
+sidebar_position: 5
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-clock text-primary" /> Időnaplók
+
+Az **Időnaplók** modul a FusionCRM **Munka** részén belül található,  
+és a **feladatokra és projektekre fordított munkaidő pontos rögzítésére** szolgál.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Munka → Időnaplók**
+
+---
+
+## Időnapló lista nézet
+
+A lista az összes rögzített időnaplót jeleníti meg.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/idonaplo_lista.png" alt="Időnaplók lista nézet"></img>
+</BrowserWindow>
+
+Megjelenő oszlopok:
+
+- **Kód**
+- **Feladat**
+- **Munkavállaló**
+- **Kezdési idő**
+- **Befejezési idő**
+- **Összes órák**
+- **Kereset**
+- **Műveletek**
+
+Elérhető funkciók:
+
+- **Idő naplózása**
+- **Exportálás**
+- Keresés és szűrés időtartam, munkavállaló és osztály alapján
+
+---
+
+## Idő naplózása
+
+Az **Idő Naplózása** gombra kattintva új időbejegyzés rögzíthető.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/idonaplo_letrehozas.png" alt="Időnapló létrehozása"></img>
+</BrowserWindow>
+
+### Kötelező mezők
+
+- **Feladat**
+- **Munkavállaló**
+- **Kezdési dátum**
+- **Kezdési idő**
+- **Befejezési dátum**
+- **Befejezési idő**
+- **Feljegyzés**
+
+### Opcionális mezők
+
+- Projekt (feladat alapján automatikusan is kitöltődhet)
+
+---
+
+## Összes órák számítása
+
+A rendszer a megadott **kezdési és befejezési idő** alapján automatikusan kiszámolja:
+
+- Az eltöltött időt
+- Az **összes ledolgozott órát**
+
+Ez az érték azonnal megjelenik az időnapló mentése előtt.
+
+---
+
+## Exportálás
+
+Az időnaplók exportálhatók:
+
+- **CSV**
+- **Excel**
+
+Felhasználási célok:
+
+- Bérszámfejtés előkészítése
+- Projektköltség számítás
+- Teljesítmény riportálás
+
+---
+
+:::warning Figyelem
+Az időnaplók **pénzügyi és HR szempontból is kritikus adatok**.  
+A módosítást és törlést csak jogosult felhasználóknak engedélyezd!
+:::
+
+---
+
+:::tip Jó gyakorlatok
+- Az időnaplókat **naprakészen** rögzítsd  
+- Minden időbejegyzéshez adj egyértelmű feljegyzést  
+- Projekthez és feladathoz mindig pontosan rendeld hozzá  
+- Rendszeresen exportáld a riportokat pénzügyi ellenőrzéshez
+:::
+
+---
+
+:::note Adatvédelem
+Az időnaplók **munkavállalói és pénzügyi adatokat** tartalmaznak.  
+A hozzáférés kezelésénél tartsd be a **GDPR és UK GDPR** előírásokat.
+:::

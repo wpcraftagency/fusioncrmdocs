@@ -1,0 +1,186 @@
+---
+title: Ajánlat
+description: Ajánlatok létrehozása, kezelése és sablon alapú generálása a FusionCRM Pénzügy moduljában
+keywords:
+  - fusioncrm
+  - ajánlat
+  - quotation
+  - pénzügy
+  - értékesítés
+sidebar_label: Ajánlat
+sidebar_position: 2
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-file-invoice-dollar text-primary" /> Ajánlat
+
+Az **Ajánlat** modul a FusionCRM **Pénzügy** részén belül érhető el,  
+és **potenciális ügyfelek számára készített ajánlatok** kezelésére szolgál – sablonokkal, tételekkel és jóváhagyással.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Pénzügy → Ajánlat**
+
+---
+
+## Ajánlat lista nézet
+
+A lista a rendszerben létrehozott összes ajánlatot megjeleníti.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ajanlat_lista.png" alt="Ajánlat lista nézet"></img>
+</BrowserWindow>
+
+Megjelenő oszlopok:
+
+- **Ajánlat**
+- **Ügylet**
+- **Kapcsolattartó neve**
+- **Összesen**
+- **Dátum**
+- **Érvényes eddig**
+- **Állapot**
+- **Műveletek**
+
+Elérhető műveletek:
+
+- **Ajánlat készítése**
+- **Ajánlati sablon**
+- **Exportálás**
+- Keresés és szűrés
+- Megtekintés, szerkesztés, törlés
+
+:::note Információ
+Az ajánlatok **potenciális ügyfeleknek** készülnek.  
+Meglévő ügyfelek esetén **Árajánlat** használata javasolt.
+:::
+
+---
+
+## Ajánlat készítése
+
+Az **Ajánlat készítése** gombra kattintva megnyílik az ajánlat adatlapja.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ajanlat_letrehozas.png" alt="Ajánlat készítése"></img>
+</BrowserWindow>
+
+---
+
+### Ajánlat részletei
+
+**Kötelező mezők:**
+
+- **Kapcsolatfelvételek**
+- **Ügylet**
+- **Érvényes eddig**
+- **Pénznem**
+- **Adó kiszámítása**
+
+**Opcionális mezők:**
+
+- Leírás
+- Ügyfél aláírása szükséges jóváhagyáshoz
+
+---
+
+## Tételek hozzáadása
+
+Az ajánlat több tételből épülhet fel.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ajanlat_tetelek.png" alt="Ajánlat tételek"></img>
+</BrowserWindow>
+
+Egy tétel tartalmazhatja:
+
+- **Tétel neve**
+- Leírás (opcionális)
+- **Mennyiség**
+- **Egységár**
+- **Adókulcs**
+- Fájl csatolása
+
+:::tip Tipp
+Használj **Termék kiválasztást**, ha gyakran ismétlődő szolgáltatásokat vagy díjakat ajánlasz.
+:::
+
+---
+
+## Kedvezmények és összesítés
+
+Az ajánlat automatikusan számolja:
+
+- Részösszeg
+- Kedvezmény (fix összeg vagy %)
+- Adó
+- **Végösszeg**
+
+---
+
+## Ajánlati sablonok
+
+Az **Ajánlati sablon** funkcióval előre definiált ajánlatminták hozhatók létre.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ajanlati_sablon_lista.png" alt="Ajánlati sablon lista"></img>
+</BrowserWindow>
+
+A sablon tartalmazhatja:
+
+- Név
+- Pénznem
+- Leírás
+- Előre rögzített tételek
+- Kedvezmény beállítások
+
+---
+
+## Ajánlat létrehozása sablonból
+
+Sablon alapú ajánlat készítése gyorsítja az értékesítési folyamatot.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ajanlati_sablon_letrehozas.png" alt="Ajánlati sablon lista"></img>
+</BrowserWindow>
+
+**Lépések:**
+
+1. Nyisd meg az **Ajánlati sablonok** listát
+2. A kívánt sablonnál válaszd: **Létrehozás Ajánlat**
+3. Add meg a kapcsolattartót és az ügyletet
+4. Szükség esetén módosítsd a tételeket
+5. Mentsd az ajánlatot
+
+:::tip Jó gyakorlat
+Sablonból létrehozott ajánlatnál mindig ellenőrizd az **érvényességi dátumot** és az adókulcsot.
+:::
+
+---
+
+## Mentés és további műveletek
+
+Mentés után az ajánlat:
+
+- Megjelenik a listában
+- Szerkeszthető
+- Exportálható
+- Jóváhagyásra küldhető
+
+---
+
+:::warning Figyelem
+Az ajánlat **pénzügyi és üzleti adatokat** tartalmaz.  
+Hozzáférést kizárólag jogosult felhasználóknak adj!
+:::
+
+:::note Adatvédelem
+Az ajánlatok kezelése során ügyelj a **GDPR és UK GDPR** előírásokra,  
+különösen a kapcsolattartói adatok és csatolt fájlok esetén.
+:::

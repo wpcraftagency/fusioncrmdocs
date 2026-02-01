@@ -1,0 +1,112 @@
+---
+title: Jóváírás
+description: Jóváírások kezelése és nyomon követése a FusionCRM Pénzügy moduljában
+keywords:
+  - fusioncrm
+  - pénzügy
+  - jóváírás
+  - credit
+  - számla
+sidebar_label: Jóváírás
+sidebar_position: 6
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-circle-minus text-primary" /> Jóváírás
+
+A **Jóváírás** modul a FusionCRM **Pénzügy** részén belül érhető el,  
+és a **számlákhoz kapcsolódó visszatérítések, korrekciók és jóváírt összegek kezelésére** szolgál.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Pénzügy → Jóváírás**
+
+---
+
+## Jóváírás lista nézet
+
+A lista a rendszerben rögzített összes jóváírást jeleníti meg.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/penzugy_jovairas_lista.png" alt="Jóváírás lista nézet"></img>
+</BrowserWindow>
+
+Megjelenő oszlopok:
+
+- **Jóváírás**
+- **Számla**
+- **Név**
+- **Teljes összeg**
+- **Jóváírás dátuma**
+- **Állapot**
+- **Műveletek**
+
+Elérhető funkciók:
+
+- Exportálás
+- Keresés és szűrés időszak, ügyfél és összeg alapján
+- Megtekintés
+
+---
+
+## Jóváírás célja
+
+A jóváírás használható az alábbi esetekben:
+
+- Túlfizetés korrigálása
+- Számla részleges vagy teljes visszatérítése
+- Adminisztratív vagy pénzügyi hiba javítása
+- Ügyfél-kompenzáció rögzítése
+
+:::note Megjegyzés
+A jóváírás **nem azonos a fizetéssel** – nem bevételt, hanem korrekciót jelent.
+:::
+
+---
+
+## Állapotkezelés
+
+A jóváírások státusz alapján követhetők:
+
+- Függőben
+- Jóváhagyva
+- Lezárva
+
+Ez lehetővé teszi a pénzügyi és könyvelési ellenőrzést.
+
+---
+
+## Exportálás
+
+A **Exportálás** gomb segítségével:
+
+- Teljes jóváíráslista letölthető
+- Könyvelési és pénzügyi riportok készíthetők
+- Auditálás támogatható
+
+---
+
+:::warning Figyelem
+A jóváírás **közvetlen hatással van a számla egyenlegére**.  
+Csak megfelelő jogosultsággal rendelkező felhasználók végezzenek ilyen műveletet!
+:::
+
+---
+
+:::tip Jó gyakorlatok
+- Jóváírás előtt mindig ellenőrizd az érintett számlát  
+- Használj egyértelmű megnevezést és dátumot  
+- Rendszeresen exportáld a jóváírásokat könyvelési egyeztetéshez  
+- Kerüld a manuális korrekciókat dokumentálás nélkül
+:::
+
+:::note Adatvédelem
+A jóváírások **érzékeny pénzügyi adatokat** tartalmaznak.  
+A hozzáférést kizárólag pénzügyi vagy adminisztrátori szerepkörhöz rendeld!
+:::

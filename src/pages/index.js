@@ -38,14 +38,14 @@ const dokCategories = [
     icon: "fa-solid fa-sliders fa-2xl text-success",
     description:
       "Az alapvető beállítások elvégzése: fiók konfiguráció, csomag kezelés, téma és általános rendszer elállítások.",
-    link: "/docs/dokumentacio/Alapbeállítások/",
+    link: "/docs/dokumentacio/Alapbeallitasok/",
   },
   {
     title: "Vezérlőpult",
     icon: "fa-solid fa-gauge-high fa-2xl text-success",
     description:
       "A vezérlőpult áttekintése: widgetek, statisztikák, gyors elérhetők és a munkafelület testre szabása.",
-    link: "/docs/dokumentacio/Vezérlőpult/",
+    link: "/docs/dokumentacio/Vezerlopult/",
   },
    {
     title: "Leads",
@@ -64,73 +64,73 @@ const dokCategories = [
   title: "HR",
   icon: "fa-solid fa-people-group fa-2xl text-success",
   description: "Emberi erőforrások kezelése: munkatársakok, szerepkörök és szervezeti struktúra.",
-  link: "/docs/dokumentacio/Leads/",
+  link: "/docs/dokumentacio/HR/",
  },
   {
     title: "Munka",
     icon: "fa-solid fa-briefcase fa-2xl text-success",
     description: "Munkaelosztás és feladatkezelés: projektek, feladatok és hatáskör-kezelés.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Munka/",
   },
   {
     title: "Pénzügy",
     icon: "fa-solid fa-dollar-sign fa-2xl text-success",
     description: "Pénzügyi tranzakciók, számolás és pénzügyi kimutatások kezelése.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Penzugy/",
   },
   {
     title: "Termékek",
     icon: "fa-solid fa-box fa-2xl text-success",
     description: "Termék-katalógus kezelése: termékek rögzítése, árazás és kategorizáció.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Termekek/",
   },
   {
     title: "Rendelések",
     icon: "fa-solid fa-cart-shopping fa-2xl text-success",
     description: "Rendelések feldolgozása: rögzítés, állapotok nyomon követése és teljesítés.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Rendelesek/",
   },
   {
     title: "Jegyek",
     icon: "fa-solid fa-headset fa-2xl text-success",
     description: "Támogatási jegyek kezelése: bejelentések, prioritás-kezelés és megoldások.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/jegyek/",
   },
   {
     title: "Események",
     icon: "fa-solid fa-calendar-check fa-2xl text-success",
     description: "Események tervezése és kezelése: naptár, meghívások és résztvevők.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Esemenyek/",
   },
   {
     title: "Üzenetek",
     icon: "fa-solid fa-envelope fa-2xl text-success",
     description: "Üzenetek és kommunikáció kezelése: levelezés, értesítések és csoportos üzenetek.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Uzenetek/",
   },
   {
     title: "GDPR",
     icon: "fa-solid fa-lock fa-2xl text-success",
     description: "Adatvédelmi szabályozás betartása: hozzájárulások, adatkezelés és jogok.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Alapbeallitasok/gdprbeallitasok",
   },
   {
     title: "Faliújság",
     icon: "fa-solid fa-newspaper fa-2xl text-success",
     description: "Belső kommunikáció és értesítések: hír-bejegyzések és közlemények kezelése.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Faliujsag/",
   },
   {
     title: "Tudásbázis",
     icon: "fa-solid fa-book fa-2xl text-success",
     description: "Tudásbázis cikkek kezelése: dokumentumok, FAQ és belső tudás tárálása.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Tudasbazis/",
   },
   {
     title: "Jelentések",
     icon: "fa-solid fa-chart-line fa-2xl text-success",
     description: "Kimutatások és jelentések: statisztikák, grafikon-elemzés és exportálás.",
-    link: "/docs/dokumentacio/Leads/",
+    link: "/docs/dokumentacio/Lead/",
   },
 ];
 
@@ -156,15 +156,6 @@ function Dokumentaciok() {
               </div>
             ))}
           </div>
-        {/* Összes megtekintése gomb */}
-        <div className={styles.centeredButton}>
-          <Link
-            className="button button--primary button--lg"
-            to="/docs/dokumentacio/"
-          >
-            Összes megtekintése
-          </Link>
-        </div>
         </div>
       </div>
     </div>
@@ -183,24 +174,44 @@ function Gyakoriak() {
             </div>
             <div className="card">
               <div className="card-header">
-                <FontAwesomeIcon icon="fa-solid fa-repeat fa-2xl text-success" />
+                <FontAwesomeIcon icon="fa-solid fa-repeat text-primary fa-2xl text-success" />
                 <h4>Csomagváltás</h4>
               </div>
               <p>
                 Az előfizetésed csomagját (amennyiben van több csomag) bármikor
                 megváltoztathatod.
               </p>
-              <VersionedLink to="/docs/dokumentacio/Alapbeállítások/csomagvaltas">
+              <VersionedLink to="/docs/dokumentacio/Alapbeallitasok/csomagvaltas">
                 Előfizetés csomagváltása <ArrowRight className="arrow" />
               </VersionedLink>
             </div>
             <div className="card">
               <div className="card-header">
-                <FontAwesomeIcon icon="fa-solid fa-paintbrush-pencil fa-2xl text-success" />
+                <FontAwesomeIcon icon="fa-solid fa-palette text-primary fa-2xl text-success" />
                 <h4>FusionCRM téma testreszabása</h4>
               </div>
               <p>Szabd testre a CRM-et a saját céged brandjére.</p>
-              <VersionedLink to="/docs/dokumentacio/Alapbeállítások/temabeallitasok">
+              <VersionedLink to="/docs/dokumentacio/Alapbeallitasok/temabeallitasok">
+                Probléma megoldása <ArrowRight className="arrow" />
+              </VersionedLink>
+            </div>
+              <div className="card">
+              <div className="card-header">
+                <FontAwesomeIcon icon="fa-solid fa-file-signature fa-2xl text-primary" />
+                <h4>Szerződés küldés</h4>
+              </div>
+              <p>Szerződéskötés és szerződés küldés ügyfeleknek.</p>
+              <VersionedLink to="/docs/dokumentacio/Munka/szerzodesek">
+                Probléma megoldása <ArrowRight className="arrow" />
+              </VersionedLink>
+            </div>
+              <div className="card">
+              <div className="card-header">
+                <FontAwesomeIcon icon="fa-solid fa-file-invoice-dollar fa-2xl text-primary" />
+                <h4>Számla küldés</h4>
+              </div>
+              <p>Számla kiállítása ügyfeleknek.</p>
+              <VersionedLink to="/docs/dokumentacio/Munka/szerzodesek">
                 Probléma megoldása <ArrowRight className="arrow" />
               </VersionedLink>
             </div>

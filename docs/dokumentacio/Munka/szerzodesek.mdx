@@ -1,0 +1,211 @@
+---
+title: Szerződések
+description: Szerződések létrehozása, kezelése és aláíratása a FusionCRM Munka moduljában
+keywords:
+  - fusioncrm
+  - szerződés
+  - contracts
+  - munka
+  - aláírás
+sidebar_label: Szerződések
+sidebar_position: 2
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-file-signature text-primary" /> Szerződések
+
+A **Szerződések** modul a FusionCRM **Munka** részén belül található,  
+és a **szerződések teljes életciklusának kezelésére** szolgál – a létrehozástól az aláírásig.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Munka → Szerződések**
+
+---
+
+## Szerződések lista nézet
+
+A lista a rendszerben rögzített összes szerződést jeleníti meg.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szerzodes_nezet.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+Megjelenő oszlopok:
+
+- **Szerződésszám**
+- **Tárgy**
+- **Ügyfél**
+- **Projekt**
+- **Összeg**
+- **Kezdő dátum**
+- **Záró dátum**
+- **Műveletek**
+
+Elérhető műveletek:
+
+- **Szerződés létrehozása**
+- **Szerződés sablon**
+- **Exportálás**
+- Keresés és szűrés
+- Megtekintés, szerkesztés, törlés, letöltés
+
+---
+
+## Szerződés létrehozása
+
+A **Szerződés létrehozása** gombra kattintva megnyílik a szerződés adatlapja.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szerzodes_letrehozas.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+### Szerződés részletei
+
+**Kötelező mezők:**
+
+- **Szerződésszám**
+- **Tárgy**
+- **Kezdés dátuma**
+- **Szerződéstípus**
+- **Szerződés értéke**
+- **Pénznem**
+
+**Opcionális mezők:**
+
+- Projekt
+- Leírás
+- Befejezési dátum
+- Határidő nélküli szerződés
+
+---
+
+## Ügyfél adatai
+
+A szerződés közvetlenül összekapcsolható egy ügyféllel.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szerzodes_ugyfeladat.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+
+Rögzíthető adatok:
+
+- Ügyfél
+- Mobil telefonszám
+- Irodai telefonszám
+- Város
+- Állam / megye
+- Ország
+- Irányítószám
+- Alternatív cím
+- Jegyzetek
+
+---
+
+## Szerződés sablonok
+
+A **Szerződés sablon** funkcióval előre definiált szerződésminták hozhatók létre.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szerzodes_sablon.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+A sablon tartalmazhatja:
+
+- Tárgy
+- Leírás
+- Szerződéstípus
+- Alapértelmezett összeget és pénznemet
+
+Ez jelentősen gyorsítja az ismétlődő szerződések létrehozását.
+
+## Szerződés létrehozása sablonból
+
+A FusionCRM lehetőséget biztosít arra, hogy **előre elkészített szerződés sablonból** hozz létre új szerződést, így jelentősen csökkenthető az adminisztrációs idő.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szerzodes_sablon_lista.png" alt="Szerződés sablon lista nézet"></img>
+</BrowserWindow>
+
+### Lépések sablon alapú szerződés létrehozásához
+
+1. Navigálj a **Munka → Szerződések → Szerződés sablon** menüpontra
+2. Válaszd ki a kívánt sablont a listából
+3. A műveletek menüben kattints a **Létrehozás Szerződés** opcióra
+4. A rendszer automatikusan kitölti:
+   - a tárgyat
+   - a leírást
+   - a szerződéstípust
+   - az alapértelmezett összeget és pénznemet
+5. Add meg az ügyfelet és az egyedi adatokat
+6. Kattints a **Mentés** gombra
+
+:::tip Jó gyakorlatok
+- Használj külön sablonokat eltérő szolgáltatásokhoz vagy csomagokhoz  
+- A sablonokat évente vizsgáld felül üzleti és jogi szempontból  
+- Csak általános feltételeket tegyél sablonba, ügyfél-specifikus adatot ne  
+- Nagy volumenű szerződéskötésnél a sablon alapú létrehozás erősen ajánlott
+:::
+
+:::warning Figyelem
+A sablon módosítása **nem frissíti automatikusan** a már létrehozott szerződéseket.  
+Minden szerződés önálló dokumentumként kezelendő!
+:::
+
+
+---
+
+## Szerződés aláíratása
+
+A szerződések **online aláírathatók**.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szerzodes_alairaslink.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szerzodes_alairas.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+Aláírás folyamata:
+
+1. Nyisd meg a szerződést
+2. Küldd el a **szerződés nyilvános linkjét** az aláírónak
+3. Az aláíró a linken keresztül megnyitja a dokumentumot
+4. Az **Aláírom** gombra kattintva hitelesíti a szerződést
+
+:::warning Figyelem
+A szerződés **csak a nyilvános linken keresztül** írható alá.  
+A linket kizárólag jogosult személynek küldd el!
+:::
+
+---
+
+## Letöltés és archiválás
+
+A szerződés bármikor:
+
+- Letölthető PDF formátumban
+- Archiválható
+- Újraküldhető aláírásra
+
+---
+
+:::tip Jó gyakorlatok
+- Használj szerződés sablonokat ismétlődő megállapodásokhoz  
+- Aláírás előtt mindig ellenőrizd a dátumokat és összegeket  
+- A nyilvános linket ne továbbítsd jogosulatlan félnek  
+- Exportáld a szerződéslistát pénzügyi riportáláshoz
+:::
+
+:::note Adatvédelem
+A szerződések **üzleti és személyes adatokat** tartalmazhatnak.  
+A hozzáférést kizárólag megfelelő jogosultságú felhasználóknak engedélyezd.
+:::

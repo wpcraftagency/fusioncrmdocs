@@ -1,0 +1,141 @@
+---
+title: Feladatok
+description: Feladatok létrehozása, kiosztása és követése a FusionCRM Munka moduljában
+keywords:
+  - fusioncrm
+  - feladat
+  - tasks
+  - munka
+  - projekt
+sidebar_label: Feladatok
+sidebar_position: 4
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-list-check text-primary" /> Feladatok
+
+A **Feladatok** modul a FusionCRM **Munka** részén belül található,  
+és a **projektekhez vagy önállóan kezelt feladatok** létrehozását, kiosztását és nyomon követését szolgálja.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Munka → Feladatok**
+
+---
+
+## Feladatok lista nézet
+
+A lista nézet az összes rögzített feladatot jeleníti meg,  
+függetlenül attól, hogy projekthez tartoznak-e vagy önálló feladatok.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/feladatok_lista.png" alt="Feladatok lista nézet"></img>
+</BrowserWindow>
+
+Megjelenő oszlopok:
+
+- **Kód**
+- **Feladat**
+- **Hozzárendelve**
+- **Befejezve**
+- **Kezdő dátum**
+- **Esedékesség dátuma**
+- **Becsült idő**
+- **Rögzített órák**
+- **Állapot**
+- **Műveletek**
+
+Elérhető műveletek:
+
+- **Feladat hozzáadása**
+- Saját feladatok megtekintése
+- Ismétlődő feladat (Recurring Task)
+- Exportálás
+- Keresés és szűrés
+- Megtekintés, szerkesztés, törlés
+
+---
+
+## Feladat létrehozása
+
+A **Feladat hozzáadása** gombra kattintva megnyílik a feladat adatlapja.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/feladat_letrehozas.png" alt="Feladat létrehozása"></img>
+</BrowserWindow>
+
+### Feladat információk
+
+**Kötelező mezők:**
+
+- **Cím**
+- **Kezdés dátuma**
+- **Esedékesség dátuma**
+- **Állapot**
+
+**Opcionális mezők:**
+
+- Feladat kategória
+- Projekt
+- Hozzárendelt felhasználó
+- Leírás
+- Határidő nélküli feladat
+
+---
+
+## Feladat hozzárendelése
+
+A feladat **egy konkrét felhasználóhoz rendelhető**,  
+így egyértelművé válik a felelősség és az elszámoltathatóság.
+
+- Egy feladat → egy felelős
+- Állapot alapján követhető az előrehaladás
+- A felhasználó a saját feladatait külön nézetben is látja
+
+---
+
+## Feladat állapotok
+
+A feladatok állapota segít a munkafolyamat átláthatóságában.
+
+Tipikus állapotok:
+
+- **Befejezetlen**
+- Folyamatban
+- Kész
+- Elhalasztva
+
+Az állapot vizuálisan is megjelenik a listában.
+
+---
+
+## Ismétlődő feladatok
+
+Az **Ismétlődő feladat (Recurring Task)** funkcióval  
+rendszeres, periodikusan ismétlődő feladatok hozhatók létre.
+
+Példák:
+
+- Heti riport készítés
+- Havi számlázási ellenőrzés
+- Rendszeres adminisztrációs feladatok
+
+---
+
+:::tip Jó gyakorlatok
+- Projekthez kapcsolódó feladatokat mindig rendelj projekthez  
+- Használj pontos esedékességi dátumot a csúszások elkerüléséhez  
+- Állapotváltással tartsd naprakészen a feladatlistát  
+- Ismétlődő munkákhoz használd a Recurring Task funkciót
+:::
+
+:::note Átláthatóság
+A feladatok állapota és hozzárendelése segíti  
+a **csapaton belüli átlátható munkaszervezést** és a vezetői kontrollt.
+:::

@@ -1,0 +1,180 @@
+---
+title: Projektek
+description: Projektek létrehozása, kezelése és sablonalapú indítása a FusionCRM Munka moduljában
+keywords:
+  - fusioncrm
+  - projektek
+  - project management
+  - munka
+  - sablon
+sidebar_label: Projektek
+sidebar_position: 3
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-diagram-project text-primary" /> Projektek
+
+A **Projektek** modul a FusionCRM **Munka** részén belül található,  
+és a **projektek teljes életciklusának kezelésére** szolgál – a létrehozástól a lezárásig.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Munka → Projektek**
+
+---
+
+## Projektek lista nézet
+
+A lista a rendszerben rögzített összes projektet jeleníti meg.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/projektek_lista.png" alt="Projektek lista nézet"></img>
+</BrowserWindow>
+
+### Megjelenő oszlopok
+
+- **Projekt kód**
+- **Projekt neve**
+- **Tagok**
+- **Kezdés dátuma**
+- **Határidő**
+- **Ügyfél**
+- **Állapot**
+- **Műveletek**
+
+### Elérhető műveletek
+
+- **Projekt hozzáadása**
+- **Projekt sablon**
+- **Importálás**
+- **Exportálás**
+- Keresés és szűrés
+- Megtekintés, szerkesztés, törlés
+
+---
+
+## Projekt létrehozása
+
+A **Projekt hozzáadása** gombra kattintva megnyílik a projekt adatlapja.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/projekt_letrehozas.png" alt="Projekt létrehozása"></img>
+</BrowserWindow>
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/projekt_letrehozas2.png" alt="Projekt létrehozása"></img>
+</BrowserWindow>
+
+### Projekt részletei
+
+**Kötelező mezők:**
+
+- **Projekt neve**
+- **Kezdés dátuma**
+- **Határidő**  
+  vagy  
+  **Nincs megadva határidő**
+
+**Opcionális mezők:**
+
+- Rövid kód
+- Projekt kategória
+- Osztály
+- Ügyfél
+- Projekt összegzése
+- Jegyzetek
+
+---
+
+## Projekt láthatóság és jogosultságok
+
+Beállítható, hogy a projekt mely elemei legyenek nyilvánosak.
+
+### Elérhető kapcsolók
+
+- **Nyilvános Gantt diagram megtekintése**
+- **Nyilvános Feladat tábla**
+- **Feladat jóváhagyása szükséges Admin / Projekt Admin által**
+- **Nyilvános projekt létrehozása**
+
+:::warning Figyelem
+Nyilvános projekt esetén **külső felhasználók is hozzáférhetnek** bizonyos adatokhoz.  
+Csak indokolt esetben engedélyezd!
+:::
+
+---
+
+## Projekt tagok hozzáadása
+
+A projekt működéséhez **legalább egy projekt tag megadása kötelező**.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/projekt_letrehozas2.png" alt="Projekt létrehozása"></img>
+</BrowserWindow>
+
+- Több felhasználó is hozzárendelhető
+- Jogosultságok a szerepkörök alapján érvényesülnek
+
+---
+
+## Projekt sablonok
+
+A **Projekt sablon** funkcióval előre definiált projekt struktúrák hozhatók létre.
+
+A sablon tartalmazhatja:
+
+- Projekt név
+- Projekt kategória
+- Alapértelmezett leírás
+- Jegyzetek
+- Manuális időnaplózás engedélyezése
+
+---
+
+## Projekt létrehozása sablonból
+
+A sablonalapú projektindítás gyorsítja az ismétlődő munkafolyamatokat.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/projekt_sablonLletrehozas.png" alt="Projekt sablonok"></img>
+</BrowserWindow>
+
+### Lépések
+
+1. Nyisd meg a **Munka → Projekt sablon** menüpontot
+2. Válaszd ki a kívánt sablont
+3. Kattints a **Létrehozás Projekt** műveletre
+4. Add meg az egyedi adatokat (dátumok, ügyfél, tagok)
+5. Mentsd a projektet
+
+:::tip Jó gyakorlat
+Használj projekt sablonokat minden **ismétlődő szolgáltatásnál vagy ügyféltípusnál** a gyorsabb indítás érdekében.
+:::
+
+---
+
+## Importálás és exportálás
+
+### Importálás
+
+- Tömeges projekt létrehozás
+- CSV / Excel alapú feltöltés
+- Ideális nagyobb csapatok és migráció esetén
+
+### Exportálás
+
+- Teljes projektlista letöltése
+- HR, pénzügyi és vezetői riportáláshoz
+
+---
+
+:::note Adatvédelem
+A projektek **üzleti és személyes adatokat** is tartalmazhatnak.  
+Ügyelj a **GDPR és UK GDPR** előírásokra, különösen nyilvános projektek esetén.
+:::

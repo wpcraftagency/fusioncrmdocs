@@ -1,0 +1,172 @@
+---
+title: Számlák
+description: Számlák létrehozása, ismétlődő számlázás és időnapló alapú számlázás a FusionCRM Pénzügy moduljában
+keywords:
+  - fusioncrm
+  - pénzügy
+  - számlák
+  - invoice
+  - ismétlődő számla
+  - időnapló számla
+sidebar_label: Számlák
+sidebar_position: 4
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-file-invoice-dollar text-primary" /> Számlák
+
+A **Számlák** menüpont a FusionCRM **Pénzügy** moduljában található,  
+és a számlák **létrehozására**, **nyilvántartására**, valamint **ismétlődő** és **időnapló alapú** számlázásra szolgál.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**Pénzügy → Számlák**
+
+---
+
+## Számlák lista nézet
+
+A lista nézetben a rendszerben rögzített számlák jelennek meg.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szamlak_lista.png" alt="Számlák lista nézet (Pénzügy → Számlák)"></img>
+</BrowserWindow>
+
+### Elérhető műveletek
+
+A felső gombokkal a leggyakoribb műveletek érhetők el:
+
+- **Számla Létrehozása**
+- **Ismétlődő Számla**
+- **Időnapló Számla Létrehozása**
+- **Exportálás**
+- Keresés és szűrés
+
+Megjelenő oszlopok (lista nézet):
+
+- **Kód**
+- **Számla**
+- **Projekt**
+- **Ügyfél**
+- **Összesen**
+- **Számla dátuma**
+- **Állapot**
+- **Művelet**
+
+---
+
+## Számla létrehozása
+
+A **Számla Létrehozása** gombra kattintva megnyílik a számla adatlapja.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/szamla_letrehozas.png" alt="Számla létrehozása adatlap"></img>
+</BrowserWindow>
+
+### Számla részletei
+
+**Kötelező mezők (csillaggal jelölve):**
+
+- **Számlaszám**
+- **Ügyfél**
+- **Árfolyam** (ha a rendszer megköveteli / deviza esetén)
+  
+**Gyakori mezők a számlán:**
+
+- **Számla dátuma**
+- **Esedékesség dátuma**
+- **Pénznem**
+- **Projekt**
+- **Adó kiszámítása**
+- **Bankszámla**
+- **Fizetési részletek**
+- **Szállítási cím** (ha elérhető / szükséges)
+
+### Tételek hozzáadása
+
+A számlára **tételek** rögzíthetők:
+
+- Termék kiválasztása
+- **Mennyiség**
+- **Egységár**
+- **Adó**
+- (opcionális) leírás és fájl csatolás
+
+---
+
+## Ismétlődő számlák
+
+Az **Ismétlődő Számla** funkcióval automatikusan, meghatározott időközönként készülő számlák hozhatók létre (pl. havi szolgáltatás).
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ismetlodok_szamlak_lista.png" alt="Ismétlődő számlák lista nézet"></img>
+</BrowserWindow>
+
+### Ismétlődő számla hozzáadása
+
+Az **Ismétlődő Számla Hozzáadása** gombra kattintva megnyílik az ismétlődő számla beállító felülete.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/ismetlodok_szamla_hozzaadas.png" alt="Ismétlődő számla hozzáadása űrlap"></img>
+</BrowserWindow>
+
+Beállítható adatok (tipikusan):
+
+- **Ügyfél**
+- **Projekt**
+- **Pénznem**
+- **Adó kiszámítása**
+- **Bankszámla**
+- **Számlázás gyakorisága** (pl. napi / heti / havi)
+- **Kezdő dátum**
+- **Összes darabszám** (ha véges ciklus kell)
+- Tételek (termék, mennyiség, egységár, adó)
+
+:::tip Jó gyakorlat
+Ismétlődő számlázásnál érdemes fix, előre beállított tételeket használni (pl. havidíj), és csak kivétel esetén módosítani.
+:::
+
+---
+
+## Időnapló számla létrehozása
+
+Az **Időnapló Számla Létrehozása** funkció lehetővé teszi, hogy egy időszakban rögzített időnaplók alapján készüljön számla.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/idonavlo_szamla_letrehozas.png" alt="Időnapló számla létrehozása"></img>
+</BrowserWindow>
+
+Tipikusan megadható:
+
+- **Számlaszám**
+- **Projekt**
+- **Ügyfél**
+- **Számla dátuma**
+- **Esedékesség dátuma**
+- **Pénznem**
+- **Árfolyam**
+- **Naplózás kezdete** / **Naplózás vége**
+- **Adó kiszámítása**
+
+:::warning Figyelem
+Időnapló számlázás előtt ellenőrizd, hogy a releváns időnaplók pontosan rögzítve vannak (projekt, feladat, munkavállaló, kezdés/befejezés).
+:::
+
+---
+
+## Exportálás
+
+A lista nézetből a **Exportálás** gombbal a számlák (vagy a kiválasztott szűrés eredménye) exportálhatók.
+
+---
+
+:::note Adatvédelem
+A számlák üzleti és személyes adatokat tartalmazhatnak.  
+A hozzáférést kizárólag megfelelő jogosultságú felhasználóknak engedélyezd.
+:::

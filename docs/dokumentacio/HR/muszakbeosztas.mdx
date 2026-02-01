@@ -1,0 +1,142 @@
+---
+title: Műszakbeosztás
+description: Műszakok és munkarend kezelése a FusionCRM HR moduljában
+keywords:
+  - fusioncrm
+  - műszakbeosztás
+  - hr
+  - shift
+  - munkaidő
+sidebar_label: Műszakbeosztás
+sidebar_position: 4
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-calendar-days text-primary" /> Műszakbeosztás
+
+A **Műszakbeosztás** modul a FusionCRM HR rendszerében a munkavállalók **napi és heti munkarendjének tervezésére, kiosztására és nyomon követésére** szolgál.  
+Segítségével biztosítható az átlátható munkaidő-kezelés, a kapacitástervezés és a HR riportálás.
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**HR → Műszakbeosztás**
+
+---
+
+## Műszakbeosztás áttekintő nézet
+
+Az alapértelmezett nézet **heti bontásban** jeleníti meg a munkavállalók műszakjait.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/Műszakbeosztás áttekintő nézet.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+Megjelenő elemek:
+
+- Munkavállalók listája
+- Hét napjai (Hétfő–Vasárnap)
+- Napi műszak cellák
+- Aktív időszak (pl. 26 jan. – 01 febr.)
+- Műszaktípus jelölések
+- Ünnepnapok megjelenítése
+
+A felső vezérlősávban elérhető:
+
+- **Munkavállaló szűrés**
+- **Osztály szűrés**
+- **Heti nézet kiválasztása**
+- Időszak lapozása (előző / következő hét)
+
+---
+
+## Egyéni műszak hozzárendelés
+
+A heti nézetben egy adott nap cellájára kattintva **egyéni műszak** rendelhető a munkavállalóhoz.
+
+Felhasználási esetek:
+
+- normál munkanap rögzítése
+- szabadnap kijelölése
+- speciális munkarend kezelése
+
+A mentést követően a műszak **azonnal megjelenik** a heti nézetben.
+
+---
+
+## Tömeges munkaváltás hozzárendelés
+
+A **Tömeges munkaváltás hozzárendelés** funkció lehetővé teszi több munkavállaló műszakjának egyszerre történő beállítását.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/munkaváltás hozzárendelés.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+### Elérés
+
+A felső sávban kattints a:
+
+**Tömeges munkaváltás hozzárendelés** gombra.
+
+---
+
+### Beállítható mezők
+
+**Alap adatok:**
+
+- **Osztály** (opcionális)
+- **Munkavállalók** (kötelező)
+- **Munkaváltás típusa** (pl. Szabadnap, általános műszak)
+
+**Időzítés:**
+
+- Hozzárendelés módja:
+  - Dátum
+  - Többszörös dátum
+  - Hónap
+- Dátum kiválasztása (több dátum is megadható)
+
+**Egyéb opciók:**
+
+- E-mail értesítés küldése
+- Megjegyzés hozzáadása
+- Dokumentum csatolása
+
+Meglévő műszak esetén az új beállítás **felülírja a korábbit**.
+
+---
+
+## Fájl hozzáadása
+
+A műszakhoz opcionálisan fájl csatolható, például:
+
+- belső HR dokumentum
+- beosztási igazolás
+- vezetői jóváhagyás
+
+A csatolt fájl a műszakhoz kapcsolódva kerül eltárolásra.
+
+---
+:::warning
+## Mentés és érvényesítés
+A **Mentés** gombra kattintva:
+
+- a műszak(ok) rögzítésre kerülnek
+- az adatok azonnal megjelennek a heti nézetben
+- a HR és vezetők valós időben látják a változásokat
+:::
+---
+:::tip
+## Jó gyakorlatok
+
+- Használj egységes műszaktípusokat
+- Tömeges módosítás előtt ellenőrizd az időszakot
+- Ünnepnapok esetén külön műszaktípust alkalmazz
+- Rendszeresen exportáld a műszakadatokat riportáláshoz
+- A műszakbeosztás HR szempontból **üzletkritikus adat**, jogosultságkezelés kötelező
+:::

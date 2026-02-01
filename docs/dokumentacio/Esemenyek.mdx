@@ -1,0 +1,106 @@
+---
+title: Események
+description: Események kezelése, ütemezése és nyomon követése a FusionCRM Naptár moduljában
+keywords:
+  - fusioncrm
+  - esemény
+  - naptár
+  - meeting
+  - időpont
+sidebar_label: Események
+sidebar_position: 5
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-calendar-days text-primary" /> Események
+
+Az **Események** modul a FusionCRM rendszerben a **találkozók, megbeszélések, belső és ügyfél események rögzítésére és kezelésére** szolgál,  
+áttekinthető naptár nézetben.
+
+---
+
+## Események naptár nézet
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/esemenyek_naptar.png" alt="Események naptár nézet"></img>
+</BrowserWindow>
+
+A naptár nézetben havi, heti és napi bontásban tekinthetők meg az események.
+
+**Elérhető funkciók:**
+- **+ Esemény hozzáadása**
+- Navigálás hónap / hét / nap nézet között
+- Szűrés munkavállaló, ügyfél és állapot szerint
+- Ismétlődő események kezelése
+
+:::tip Tipp
+A naptárban egy napra kattintva azonnal indítható új esemény létrehozása.
+:::
+
+---
+
+## Esemény hozzáadása
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/esemeny_hozzaadasa.png" alt="Esemény hozzáadása"></img>
+</BrowserWindow>
+
+Új esemény rögzítésekor az alábbi mezők érhetők el:
+
+- **Esemény neve***  
+- **Címke színe*** – vizuális megkülönböztetéshez  
+- **Helyszín***  
+- **Leírás** – részletes információk  
+- **Kezdési dátum és idő***  
+- **Befejezési dátum és idő***  
+- **Osztály** – opcionális  
+- **Munkavállaló***  
+- **Ügyfél***  
+- **Házigazda**  
+- **Állapot** – pl. Függőben, Megerősítve  
+- **Emlékeztető küldése**  
+- **Esemény linkje** – online meeting URL
+
+:::warning Fontos
+A kezdési és befejezési időpont nem lehet azonos vagy fordított sorrendű.
+:::
+
+---
+
+## Ismétlődő események
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/esemeny_hozzaadasa.png" alt="Ismétlődő esemény beállítása"></img>
+</BrowserWindow>
+
+Az **Ismétlődő események** funkció segítségével rendszeresen visszatérő események (pl. heti meetingek) automatizálhatók.
+
+Beállítható:
+- Ismétlődés típusa (napi, heti, havi)
+- Ismétlés kezdete
+- Ismétlés vége vagy ciklusszám
+
+:::tip Tipp
+Ismétlődő események esetén az egyes alkalmak külön is módosíthatók.
+:::
+
+---
+
+## Esemény állapotok
+
+Az események az alábbi állapotok egyikével kezelhetők:
+- **Függőben**
+- **Megerősítve**
+- **Befejezve**
+- **Törölve**
+
+Az állapot segíti a naptár átláthatóságát és a csapaton belüli egyeztetést.
+
+---
+
+## Összefoglalás
+
+Az **Események** modul központi szerepet játszik az időpontok szervezésében és a napi operatív munkában.  
+Segítségével elkerülhetők az ütközések, javul az ügyfélkommunikáció és hatékonyabbá válik a belső együttműködés.

@@ -1,0 +1,136 @@
+---
+title: Osztály
+description: Osztályok kezelése és hierarchia kialakítása a FusionCRM HR moduljában
+keywords:
+  - fusioncrm
+  - osztály
+  - department
+  - hr
+  - szervezet
+sidebar_label: Osztály
+sidebar_position: 8
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-building text-primary" /> Osztály
+
+Az **Osztály** modul a FusionCRM HR rendszerének **szervezeti struktúráját** kezeli.  
+Segítségével logikusan felépíthető a vállalat **részlegekre bontott működése**, amely alapja:
+
+- a munkavállalók besorolásának  
+- a jogosultságkezelésnek  
+- a riportálásnak  
+- a vezetői áttekintésnek  
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**HR → Osztály**
+
+---
+
+## Osztály lista nézet
+
+Az osztályok **táblázatos formában** jelennek meg.
+
+Megjelenő oszlopok:
+
+- **Név**
+- **Felsőbb osztály**
+- **Műveletek**
+
+Elérhető funkciók:
+
+- **Osztály hozzáadása**
+- **Exportálás**
+- Keresés
+- Szűrés
+
+---
+
+## Osztály hozzáadása
+
+Az **Osztály hozzáadása** gombra kattintva új szervezeti egység hozható létre.
+
+### Kitölthető mezők
+
+- **Név** *(kötelező)*  
+  Például: `Humánerőforrás`, `Sales`, `Fejlesztés`
+
+- **Szülő osztály** *(opcionális)*  
+  Lehetővé teszi **hierarchikus szerkezet** kialakítását  
+  (pl. *HR → Toborzás*, *HR → Bérszámfejtés*)
+
+---
+
+## Hierarchikus osztálystruktúra
+
+A **Szülő osztály** mező használatával több szintű szervezet hozható létre:
+
+- Főosztály
+- Alosztály
+- Csoport
+
+Ez különösen hasznos:
+
+- nagyobb vállalatoknál
+- több csapatos működésnél
+- vezetői riportoknál
+
+:::tip Jó gyakorlat
+Nagyobb szervezeteknél először a **főosztályokat** hozd létre,  
+majd ezek alá add hozzá az alosztályokat.
+:::
+
+---
+
+## Mentés
+
+Az adatok rögzítéséhez kattints a **Mentés** gombra.
+
+✔️ Az osztály azonnal megjelenik a listában  
+✔️ Az új osztály kiválasztható lesz munkavállalókhoz  
+✔️ Azonnal használható riportálásnál és szűrésnél  
+
+---
+
+## Exportálás
+
+Az **Exportálás** funkcióval letölthető:
+
+- az összes osztály
+- a hierarchikus struktúra
+
+Felhasználási célok:
+
+- HR audit
+- belső dokumentáció
+- szervezeti ábra készítése
+
+---
+
+:::warning Figyelem
+Az osztály törlése vagy átnevezése **hatással lehet**:
+- munkavállalói besorolásokra  
+- riportokra  
+- jogosultsági logikákra  
+
+Módosítás előtt mindig ellenőrizd az érintett munkavállalókat!
+:::
+
+---
+
+## Jó gyakorlatok
+
+:::tip Jó gyakorlatok
+- Használj **egyértelmű, üzletileg értelmezhető** osztályneveket  
+- Kerüld a túl mély (4–5 szintnél több) hierarchiát  
+- Azonos logika szerint nevezd el az alosztályokat  
+- Rendszeresen vizsgáld felül az inaktív osztályokat  
+- GDPR és UK GDPR szempontból csak jogosult szerepkörök férjenek hozzá a HR struktúrához
+:::

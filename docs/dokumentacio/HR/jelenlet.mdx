@@ -1,0 +1,159 @@
+---
+title: Jelenlét kezelése
+description: Munkavállalói jelenlét rögzítése, kezelése és riportálása a FusionCRM HR moduljában
+keywords:
+  - fusioncrm
+  - jelenlét
+  - attendance
+  - hr
+  - munkaidő
+sidebar_label: Jelenlét
+sidebar_position: 5
+---
+
+import FontAwesomeIcon from "@site/src/components/FontAwesomeIcon";
+import BrowserWindow from "@site/src/components/BrowserWindow";
+
+# <FontAwesomeIcon icon="fa-solid fa-user-clock text-primary" /> Jelenlét
+
+A **Jelenlét** modul a FusionCRM HR rendszerében a munkavállalók **napi és havi munkaidő-jelenlétének rögzítésére és ellenőrzésére** szolgál.
+
+Ez a modul kulcsfontosságú:
+
+- munkaidő-nyilvántartáshoz  
+- bérszámfejtés előkészítéséhez  
+- HR riportáláshoz  
+- jogszabályi megfeleléshez (EU / UK)
+
+---
+
+## Elérés
+
+**Navigációs útvonal:**
+
+**HR → Jelenlét**
+
+---
+
+## Jelenlét lista nézet
+
+A lista nézet **havi bontásban** jeleníti meg a munkavállalók jelenléti adatait.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/jelenlet_nezet.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+Megjelenő elemek:
+
+- **Munkavállaló neve**
+- **Napok (1–31)**
+- **Napi státusz ikonok**
+- **Összesített jelenléti napok**
+
+### Jelmagyarázat (ikonok)
+
+- ⭐ Ünnep  
+- 📅 Szabadnap  
+- ✔️ Jelen  
+- 🕒 Fél nap  
+- ⏰ Késés  
+- ❌ Hiányzó  
+- 🏖️ Szabadságon  
+
+Ez az áttekintés lehetővé teszi a **gyors havi HR kontrollt**.
+
+---
+
+## Jelenlét rögzítése
+
+A **Jelenlét rögzítése** gombra kattintva manuálisan rögzíthető a jelenlét.
+
+<BrowserWindow url="https://fusioncrm.hu">
+  <img src="/img/jelenlet_adatok.png" alt="HelloPack API-kulcskészítő pozíció"></img>
+</BrowserWindow>
+
+### Jelenléti adatok
+
+**Kötelező mezők:**
+
+- **Munkavállaló**
+- **Év**
+- **Hónap**
+- **Bejelentkezés ideje**
+- **Kijelentkezés ideje**
+- **Munkahely**
+
+### Rögzítés típusa
+
+Választható:
+
+- **Hónap** – teljes havi jelenlét rögzítése
+- **Dátum** – egy adott nap módosítása
+
+---
+
+## Munkaidő adatok
+
+Beállítható:
+
+- **Bejelentkezés időpontja**
+- **Kijelentkezés időpontja**
+- **Helyszín** (pl. iroda, telephely)
+- **Munkahely típusa** (pl. iroda, home office)
+
+További jelölések:
+
+- **Késés** – igen / nem  
+- **Fél nap** – igen / nem  
+
+---
+
+## Felülírás opció
+
+Lehetőség van meglévő jelenléti adatok felülírására.
+
+:::warning
+A **Jelenléti adatok felülírása** opció minden korábbi rögzítést lecserél.
+Használata csak indokolt esetben javasolt!
+:::
+
+## Mentés
+
+A jelenlét rögzítéséhez kattints a **Mentés** gombra.
+
+✔️ Az adatok **azonnal megjelennek** a havi jelenléti listában  
+✔️ A **HR és vezetők** rögtön látják a módosításokat  
+✔️ A rendszer automatikusan frissíti az összesítéseket  
+
+---
+
+## Importálás és exportálás
+
+### Importálás
+
+Az **Importálás** funkció lehetővé teszi a jelenléti adatok **tömeges feltöltését**.
+
+Felhasználási esetek:
+
+- nagyobb csapatok havi jelenlétének rögzítése
+- korábbi rendszerből történő adatátvétel
+- adminisztratív időcsökkentés
+
+Támogatott formátumok:
+
+- **CSV**
+- **Excel (XLS / XLSX)**
+
+:::info
+Importálás előtt mindig ellenőrizd a dátum- és időformátumokat,  
+és használd a rendszer által biztosított minta fájlt.
+:::
+
+:::tip
+## Jó gyakorlatok
+- **Rögzítsd a jelenlétet havonta, egységes időpontban**
+- **Használj **fél nap** jelölést részmunkaidőnél**
+- **Késés esetén mindig pontos időadatot adj meg**
+- **Exportáld rendszeresen a jelenléti adatokat HR audit célokra**
+- **Ügyelj a GDPR és UK GDPR előírásokra a jelenléti adatok kezelésénél**
+:::
