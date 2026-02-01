@@ -37,12 +37,10 @@ const config = {
     ],
   ],
   
-  scripts: [
-    {
-      src: "https://kit.fontawesome.com/11cbb0ec24.js",
-      crossorigin: "anonymous",
-    },
-  ],
+ scripts: [],
+stylesheets: [
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css",
+],
 
   presets: [
     [
