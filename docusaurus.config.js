@@ -107,7 +107,7 @@ stylesheets: [
 
         ],
         logo: {
-          alt: "NestlyWP!",
+          alt: "FusionCRM!",
           src: "img/logo-260-60-color.svg",
           srcDark: "img/logo-260-60-wihte-green.svg",
           href: "https://fusioncrm.hu",

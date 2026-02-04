@@ -21,7 +21,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/dokumentacio/"
           >
-            Kezd itt!
+            Kezdd itt!
           </Link>
         </div>
       </div>
@@ -125,12 +125,6 @@ const dokCategories = [
     icon: "fa-solid fa-book fa-2xl text-success",
     description: "Tudásbázis cikkek kezelése: dokumentumok, FAQ és belső tudás tárálása.",
     link: "/docs/dokumentacio/Tudasbazis/",
-  },
-  {
-    title: "Jelentések",
-    icon: "fa-solid fa-chart-line fa-2xl text-success",
-    description: "Kimutatások és jelentések: statisztikák, grafikon-elemzés és exportálás.",
-    link: "/docs/dokumentacio/Lead/",
   },
 ];
 
